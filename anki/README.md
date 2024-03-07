@@ -106,6 +106,27 @@
 | [98](#id98) | [What steps or best practices should a deve](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/98%20-%20What%20steps%20or%20best%20practices%20should%20a%20deve.md) | 1 | 1 |
 | [99](#id99) | [How do the networking capabilities in app](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/99%20-%20How%20do%20the%20networking%20capabilities%20in%20app.md) | 1 | 1 |
 | [100](#id100) | [What future enhancements or features do yo](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/100%20-%20What%20future%20enhancements%20or%20features%20do%20yo.md) | 1 | 1 |
+| **-** | **Implement Azure App Service web apps > Configure web app settings** | **1** | **2** |
+| [101](#id101) | [What is the purpose of application setting](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%202%20-%20Configure%20web%20app%20settings/101%20-%20What%20is%20the%20purpose%20of%20application%20setting.md) | 1 | 2 |
+| [102](#id102) | [Why is it important to separate applicatio](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%202%20-%20Configure%20web%20app%20settings/102%20-%20Why%20is%20it%20important%20to%20separate%20applicatio.md) | 1 | 2 |
+| [103](#id103) | [What are the different components or eleme](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%202%20-%20Configure%20web%20app%20settings/103%20-%20What%20are%20the%20different%20components%20or%20eleme.md) | 1 | 2 |
+| [104](#id104) | [Explain the overall process of adding edi](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%202%20-%20Configure%20web%20app%20settings/104%20-%20Explain%20the%20overall%20process%20of%20adding%20edi.md) | 1 | 2 |
+| [105](#id105) | [How does the choice of programming languag](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%202%20-%20Configure%20web%20app%20settings/105%20-%20How%20does%20the%20choice%20of%20programming%20languag.md) | 1 | 2 |
+| [106](#id106) | [Are there any limitations or constraints i](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%202%20-%20Configure%20web%20app%20settings/106%20-%20Are%20there%20any%20limitations%20or%20constraints%20i.md) | 1 | 2 |
+| [107](#id107) | [What is the common pattern or behavior obs](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%202%20-%20Configure%20web%20app%20settings/107%20-%20What%20is%20the%20common%20pattern%20or%20behavior%20obs.md) | 1 | 2 |
+| [108](#id108) | [In what scenarios would you choose to use](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%202%20-%20Configure%20web%20app%20settings/108%20-%20In%20what%20scenarios%20would%20you%20choose%20to%20use.md) | 1 | 2 |
+| [109](#id109) | [How do application settings and connection](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%202%20-%20Configure%20web%20app%20settings/109%20-%20How%20do%20application%20settings%20and%20connection.md) | 1 | 2 |
+| [110](#id110) | [What are the potential implications or con](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%202%20-%20Configure%20web%20app%20settings/110%20-%20What%20are%20the%20potential%20implications%20or%20con.md) | 1 | 2 |
+| [111](#id111) | [Compare and contrast the handling of appli](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%202%20-%20Configure%20web%20app%20settings/111%20-%20Compare%20and%20contrast%20the%20handling%20of%20appli.md) | 1 | 2 |
+| [112](#id112) | [How do application settings relate to othe](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%202%20-%20Configure%20web%20app%20settings/112%20-%20How%20do%20application%20settings%20relate%20to%20othe.md) | 1 | 2 |
+| [113](#id113) | [Explain the concept of sticky or swappa](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%202%20-%20Configure%20web%20app%20settings/113%20-%20Explain%20the%20concept%20of%20sticky%20or%20swappa.md) | 1 | 2 |
+| [114](#id114) | [What are the potential benefits of using a](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%202%20-%20Configure%20web%20app%20settings/114%20-%20What%20are%20the%20potential%20benefits%20of%20using%20a.md) | 1 | 2 |
+| [115](#id115) | [What trade-offs or considerations should b](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%202%20-%20Configure%20web%20app%20settings/115%20-%20What%20trade-offs%20or%20considerations%20should%20b.md) | 1 | 2 |
+| [116](#id116) | [Describe a scenario where a combination of](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%202%20-%20Configure%20web%20app%20settings/116%20-%20Describe%20a%20scenario%20where%20a%20combination%20of.md) | 1 | 2 |
+| [117](#id117) | [How might the management of application se](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%202%20-%20Configure%20web%20app%20settings/117%20-%20How%20might%20the%20management%20of%20application%20se.md) | 1 | 2 |
+| [118](#id118) | [What steps or best practices should a deve](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%202%20-%20Configure%20web%20app%20settings/118%20-%20What%20steps%20or%20best%20practices%20should%20a%20deve.md) | 1 | 2 |
+| [119](#id119) | [How does the application settings feature](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%202%20-%20Configure%20web%20app%20settings/119%20-%20How%20does%20the%20application%20settings%20feature.md) | 1 | 2 |
+| [120](#id120) | [What future enhancements or features do yo](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%202%20-%20Configure%20web%20app%20settings/120%20-%20What%20future%20enhancements%20or%20features%20do%20yo.md) | 1 | 2 |
 
 ### Part I - Implement Azure App Service web apps
 
@@ -1012,6 +1033,186 @@ A:: =============================================
 Potential future enhancements could include better integration with other Azure networking services, improved traffic routing and load balancing capabilities, support for advanced networking protocols and standards, enhanced network security features, and simplified configuration and management of networking settings for App Service applications.
 
 #### Chapter 2 - Configure web app settings
+
+Q:: =============================================  
+
+##### What is the purpose of application settings in Azure App Service?
+
+###### ID101
+
+A:: =============================================  
+Application settings in App Service are variables passed as environment variables to the application code. They allow you to store and manage configuration settings and secrets separately from your application code.
+
+Q:: =============================================  
+
+##### Why is it important to separate application settings from the application code?
+
+###### ID102
+
+A:: =============================================  
+Separating application settings from the code is important for security, flexibility, and maintainability. It allows you to keep sensitive information out of your codebase, manage different settings for different environments, and update configuration without redeploying the entire application.
+
+Q:: =============================================  
+
+##### What are the different components or elements involved in configuring application settings in App Service?
+
+###### ID103
+
+A:: =============================================  
+The key components are the application settings themselves, which can be added, edited, or managed in bulk through the Azure portal or CLI. There are also connection strings, which are a specific type of setting used for database connections.
+
+Q:: =============================================  
+
+##### Explain the overall process of adding, editing, and managing application settings in Azure App Service.
+
+###### ID104
+
+A:: =============================================  
+You can navigate to the Configuration > Application Settings section in the Azure portal to add, edit, or bulk edit application settings and connection strings. Changes are applied immediately after saving. Settings can also be configured to be swappable or sticky to specific deployment slots.
+
+Q:: =============================================  
+
+##### How does the choice of programming language or framework impact the way application settings are handled in App Service?
+
+###### ID105
+
+A:: =============================================  
+For ASP.NET and ASP.NET Core, application settings in App Service override the settings in Web.config or appsettings.json files. For other languages, it's recommended to use app settings instead of connection strings to access configuration values.
+
+Q:: =============================================  
+
+##### Are there any limitations or constraints in the way application settings are configured or accessed in App Service?
+
+###### ID106
+
+A:: =============================================  
+For Linux apps and custom containers, any nested JSON key structure in the app setting name (e.g., ApplicationInsights:InstrumentationKey) needs to be configured as ApplicationInsights__InstrumentationKey, with colons replaced by double underscores.
+
+Q:: =============================================  
+
+##### What is the common pattern or behavior observed when working with application settings across different deployment slots or environments?
+
+###### ID107
+
+A:: =============================================  
+Application settings can be configured to be swappable or sticky to specific deployment slots, allowing you to maintain separate settings for different environments (e.g., development, staging, production) and control which settings are swapped during deployment slot swaps.
+
+Q:: =============================================  
+
+##### In what scenarios would you choose to use application settings over connection strings or vice versa?
+
+###### ID108
+
+A:: =============================================  
+Application settings are generally preferred for storing configuration values and secrets, as they are easier to access and manage. Connection strings are recommended for database connections, especially for Azure databases that are backed up along with the app when a connection string is configured.
+
+Q:: =============================================  
+
+##### How do application settings and connection strings differ in terms of their formatting, usage, and accessibility within the application code?
+
+###### ID109
+
+A:: =============================================  
+Application settings are simple key-value pairs, while connection strings have a specific formatting and may require special handling in the application code to access the values. Connection strings are also typed (e.g., SQLServer, PostgreSQL) in App Service.
+
+Q:: =============================================  
+
+##### What are the potential implications or consequences of not properly configuring or securing application settings in App Service?
+
+###### ID110
+
+A:: =============================================  
+Not properly configuring or securing application settings can lead to security vulnerabilities, as sensitive information like database connection strings or API keys may be exposed. It can also cause issues with application functionality or deployment if settings are missing or incorrect.
+
+Q:: =============================================  
+
+##### Compare and contrast the handling of application settings between ASP.NET/ASP.NET Core and other programming languages or frameworks in App Service.
+
+###### ID111
+
+A:: =============================================  
+For ASP.NET/ASP.NET Core, application settings in App Service override the settings in Web.config or appsettings.json files, allowing you to keep development settings in code and production secrets in App Service. For other languages, it's recommended to use app settings instead of connection strings to access configuration values.
+
+Q:: =============================================  
+
+##### How do application settings relate to other Azure services or features, such as deployment slots or backups?
+
+###### ID112
+
+A:: =============================================  
+Application settings can be configured to be swappable or sticky to specific deployment slots, which is useful for maintaining separate settings across different environments. Connection strings for certain Azure databases also ensure that the databases are backed up along with the app.
+
+Q:: =============================================  
+
+##### Explain the concept of "sticky" or "swappable" settings in the context of deployment slots in App Service.
+
+###### ID113
+
+A:: =============================================  
+Sticky settings are tied to a specific deployment slot and are not swapped during a slot swap. Swappable settings are shared across deployment slots and are swapped during a slot swap. This allows you to maintain separate settings for different environments (e.g., development, staging, production).
+
+Q:: =============================================  
+
+##### What are the potential benefits of using application settings to store configuration values or secrets in App Service?
+
+###### ID114
+
+A:: =============================================  
+Benefits include improved security by keeping sensitive information out of the codebase, flexibility to manage different settings for different environments, and the ability to update configuration without redeploying the entire application.
+
+Q:: =============================================  
+
+##### What trade-offs or considerations should be taken into account when deciding between storing settings in the application code versus in App Service settings?
+
+###### ID115
+
+A:: =============================================  
+Storing settings in the application code may be simpler for small applications or during development, but it can lead to security risks and inflexibility when managing different environments. Storing settings in App Service requires more setup and management but provides better security, flexibility, and separation of concerns.
+
+Q:: =============================================  
+
+##### Describe a scenario where a combination of application settings and connection strings might be used in an App Service application.
+
+###### ID116
+
+A:: =============================================  
+A scenario could involve using application settings for most configuration values and secrets, while using connection strings specifically for database connections, especially for Azure databases that are backed up along with the app when a connection string is configured.
+
+Q:: =============================================  
+
+##### How might the management of application settings in App Service evolve or change to accommodate new application architectures or deployment models?
+
+###### ID117
+
+A:: =============================================  
+The management of application settings may evolve to better support microservices architectures, serverless computing, or containerized deployments. This could involve improvements in centralized configuration management, better integration with other Azure services, or support for more advanced configuration formats or protocols.
+
+Q:: =============================================  
+
+##### What steps or best practices should a developer follow to implement secure and scalable application settings management in their App Service applications?
+
+###### ID118
+
+A:: =============================================  
+Best practices include: storing sensitive information in App Service settings instead of code, using deployment slots and swappable/sticky settings to manage different environments, regularly reviewing and updating settings, following security best practices (e.g., rotating secrets), and automating the management of settings through tools or scripts.
+
+Q:: =============================================  
+
+##### How does the application settings feature in App Service fit into the broader Azure ecosystem and cloud computing strategy?
+
+###### ID119
+
+A:: =============================================  
+The application settings feature is part of Microsoft's overall strategy to provide a secure, scalable, and managed platform for hosting and running applications in the cloud. It integrates with other Azure services like deployment slots, backups, and databases, contributing to the overall application lifecycle management capabilities of the Azure ecosystem.
+
+Q:: =============================================  
+
+##### What future enhancements or features do you anticipate in App Service to improve the management and security of application settings and configuration data?
+
+###### ID120
+
+A:: =============================================  
+Potential future enhancements could include better integration with Azure Key Vault for secure storage and management of secrets, support for more advanced configuration formats (e.g., YAML, HashiCorp Consul), improved tooling and automation for managing settings across multiple environments, and enhanced security features like automatic rotation of secrets or integration with Azure Managed Identities.
 
 #### Chapter 3 - Scale apps in Azure App Service
 
