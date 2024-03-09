@@ -883,6 +883,174 @@ A:: Some permissions might be exposed by the target service that are not necessa
 
 #### Chapter 1 - Explore Azure Blob storage
 
+Q:: What is Azure Blob storage optimized for?
+A:: Azure Blob storage is optimized for storing massive amounts of unstructured data, which includes data that doesn't adhere to a particular data model or definition, such as text or binary data.
+
+Q:: Can you name some examples of unstructured data?
+A:: Examples of unstructured data include serving images or documents directly to a browser, storing files for distributed access, streaming video and audio, writing to log files, and storing data for backup, restore, disaster recovery, and archiving.
+
+Q:: What are the purposes for which Blob storage is designed?
+A:: Blob storage is designed for serving images or documents directly to a browser, storing files for distributed access, streaming video and audio, writing to log files, storing data for backup and restore, disaster recovery, and archiving, as well as storing data for analysis by on-premises or Azure-hosted services.
+
+Q:: How can users or client applications access objects in Blob storage?
+A:: Objects in Blob storage can be accessed via HTTP/HTTPS, from anywhere in the world. Access is possible through the Azure Storage REST API, Azure PowerShell, Azure CLI, or an Azure Storage client library.
+
+Q:: What is an Azure Storage account, and what does it provide?
+A:: An Azure Storage account is the top-level container for all Azure Blob storage data. It provides a unique namespace for Azure Storage data that is accessible from anywhere in the world over HTTP or HTTPS.
+
+Q:: How many performance levels of storage accounts does Azure Storage offer?
+A:: Azure Storage offers two performance levels of storage accounts: standard and premium.
+
+Q:: What are the types of storage accounts offered by Azure Storage?
+A:: The types of storage accounts offered by Azure Storage are General-purpose v2 (Standard), Block blob (Premium), and Page blobs (Premium).
+
+Q:: What distinguishes Premium storage accounts from Standard storage accounts?
+A:: Premium storage accounts offer higher performance by using solid-state drives. Standard storage accounts, specifically General-purpose v2, are recommended for most scenarios using Azure Storage.
+
+Q:: Which access tiers are available for block blob data in Azure Storage?
+A:: The available access tiers for block blob data in Azure Storage are Hot, Cool, Cold, and Archive.
+
+Q:: What is the Hot access tier optimized for?
+A:: The Hot access tier is optimized for frequent access of objects in the storage account. It has the highest storage costs but the lowest access costs.
+
+Q:: How long must data be stored in the Cool access tier before it becomes cost-effective?
+A:: Data must be stored in the Cool access tier for at least 30 days before it becomes cost-effective.
+
+Q:: What is the main advantage of the Archive access tier?
+A:: The Archive access tier is the most cost-effective option for storing data, but accessing that data is more expensive than accessing data in the Hot or Cool tiers. It is optimized for data that can tolerate several hours of retrieval latency and remains in the Archive tier for at least 180 days.
+
+Q:: Can you switch between different access tiers in Azure Storage?
+A:: Yes, you can switch between different access tiers in Azure Storage at any time based on the change in the usage pattern of your data.
+
+Q:: What are the three types of resources offered by Azure Blob storage?
+A:: The three types of resources offered by Azure Blob storage are the storage account, a container in the storage account, and a blob in a container.
+
+Q:: What does a storage account provide in Azure?
+A:: A storage account provides a unique namespace in Azure for your data.
+
+Q:: How does the combination of account name and Azure Storage blob endpoint form the base address for objects in a storage account?
+A:: The combination of the account name and the Azure Storage blob endpoint forms the base address for the objects in your storage account by providing a unique address for each stored object.
+
+Q:: Provide an example of a default endpoint for Blob storage.
+A:: For example, if your storage account is named _mystorageaccount_, then the default endpoint for Blob storage is: `http://mystorageaccount.blob.core.windows.net`.
+
+Q:: What is the purpose of a container in Azure Blob storage?
+A:: A container organizes a set of blobs, similar to a directory in a file system.
+
+Q:: How does a container organize data in Azure Blob storage?
+A:: A container organizes data in Azure Blob storage by grouping together a set of blobs.
+
+Q:: What are the rules for naming a container in Azure Blob storage?
+A:: Container names can be between 3 and 63 characters long, must start with a letter or number, and can contain only lowercase letters, numbers, and the dash (-) character.
+
+Q:: What is the URI format for a container in Azure Blob storage?
+A:: The URI format for a container in Azure Blob storage is similar to: `https://myaccount.blob.core.windows.net/mycontainer`.
+
+Q:: What are the three types of blobs supported by Azure Storage?
+A:: The three types of blobs supported by Azure Storage are block blobs, append blobs, and page blobs.
+
+Q:: What is the maximum size that block blobs can store?
+A:: Block blobs can store up to about 190.7 TiB.
+
+Q:: How are append blobs optimized compared to block blobs?
+A:: Append blobs are optimized for append operations, making them ideal for scenarios such as logging data from virtual machines.
+
+Q:: What types of files do page blobs store, and what is their maximum size?
+A:: Page blobs store random access files up to 8 TB in size, serving as disks for Azure virtual machines.
+
+Q:: Provide the URI format for a blob in Azure Blob storage.
+A:: The URI format for a blob in Azure Blob storage is similar to: `https://myaccount.blob.core.windows.net/mycontainer/myblob`.
+
+Q:: Can you provide an example of a URI for a blob that includes a virtual directory?
+A:: An example of a URI for a blob that includes a virtual directory is: `https://myaccount.blob.core.windows.net/mycontainer/myvirtualdirectory/myblob`.
+
+Q:: What are the primary security features provided by Azure Storage?
+A:: Azure Storage provides a comprehensive set of security capabilities, including automatic encryption of all data, Role-Based Access Control (RBAC) support, Client-Side Encryption for securing data in transit, Azure Disk Encryption for OS and data disks used by Azure virtual machines, and delegated access using shared access signatures.
+
+Q:: How does Azure Storage handle encryption of data at rest?
+A:: Azure Storage automatically encrypts data when persisting it to the cloud using 256-bit AES encryption, ensuring strong security measures. This encryption is transparent to users and applications and is similar to BitLocker encryption on Windows.
+
+Q:: Describe the encryption process used by Azure Storage.
+A:: Azure Storage uses 256-bit AES encryption to encrypt data at rest, ensuring strong security measures. This encryption is transparent to users and applications and is FIPS 140-2 compliant.
+
+Q:: Can the encryption feature in Azure Storage be disabled? Explain.
+A:: No, the encryption feature in Azure Storage cannot be disabled. It is enabled by default for all new and existing storage accounts, ensuring data security without requiring modifications to code or applications.
+
+Q:: What is FIPS 140-2 compliance, and how does it relate to Azure Storage encryption?
+A:: FIPS 140-2 compliance is a standard for cryptographic modules, ensuring they meet specific security requirements. Azure Storage encryption adheres to FIPS 140-2 compliance by using 256-bit AES encryption, providing a high level of data security.
+
+Q:: What types of data objects in Azure Storage are encrypted?
+A:: All Azure Storage resources are encrypted, including blobs, disks, files, queues, tables, and object metadata.
+
+Q:: Explain the options available for encryption key management in Azure Storage.
+A:: Encryption key management in Azure Storage can be handled using Microsoft-managed keys or customer-managed keys. Customers can also provide their own keys for granular control over encryption and decryption operations.
+
+Q:: What is the difference between customer-managed keys and customer-provided keys?
+A:: Customer-managed keys are used to encrypt all data in all services within a storage account, while customer-provided keys offer granular control over encryption and decryption operations at the blob level.
+
+Q:: Which Azure Storage services support customer-managed keys?
+A:: Customer-managed keys are supported for Blob storage and Azure Files within Azure Storage.
+
+Q:: What responsibilities does the customer have regarding key rotation when using customer-managed keys?
+A:: Customers are responsible for key rotation when using customer-managed keys, ensuring the security and integrity of their data encryption.
+
+Q:: How does the Azure portal compare to Azure Storage REST API in terms of key usage for customer-managed keys?
+A:: The Azure portal provides a user-friendly interface for managing customer-managed keys, while the Azure Storage REST API offers programmatic access for key management operations.
+
+Q:: Who has access to Microsoft-managed keys, customer-managed keys, and customer-provided keys respectively?
+A:: Microsoft-managed keys are accessible only to Microsoft, customer-managed keys can be accessed by both Microsoft and the customer, and customer-provided keys are accessible only to the customer.
+
+Q:: Is there any additional cost associated with Azure Storage encryption?
+A:: No, there is no additional cost associated with Azure Storage encryption. It is enabled by default for all storage accounts without any extra charges.
+
+Q:: How does Azure Storage encryption impact performance?
+A:: Azure Storage encryption does not impact performance, ensuring that data remains secure without compromising system efficiency.
+
+Q:: Can you explain the options for securing data in transit between an application and Azure Storage?
+A:: Data in transit between an application and Azure Storage can be secured using Client-Side Encryption, HTTPS, or SMB 3.0, providing multiple layers of security for communication.
+
+Q:: What types of content can be served directly from a storage container named _$web_?
+A:: HTML, CSS, JavaScript, and image files can be served directly from a storage container named _$web_.
+
+Q:: What are the advantages of hosting content in Azure Storage?
+A:: Hosting content in Azure Storage enables the use of serverless architectures, including Azure Functions and other Platform as a service (PaaS) services.
+
+Q:: What are the limitations of static websites in Azure Storage?
+A:: Static websites in Azure Storage have limitations such as the inability to configure headers and lack of support for authentication and authorization (AuthN and AuthZ) features.
+
+Q:: If you need to configure headers for a static website, what Azure service do you need to use?
+A:: If you need to configure headers for a static website, you need to use Azure Content Delivery Network (Azure CDN).
+
+Q:: What alternative service is recommended if authentication and authorization features are required for your scenario?
+A:: If authentication and authorization features are required, consider using Azure Static Web Apps.
+
+Q:: How do you enable static website hosting on a storage account?
+A:: To enable static website hosting on a storage account, locate the storage account in the Azure portal, display the account overview, select **Static website**, enable static website hosting for the account, specify the default index and error pages, and save the configuration.
+
+Q:: What container is automatically created when you enable static website hosting?
+A:: When you enable static website hosting, Azure Storage automatically creates a container named _$web_.
+
+Q:: What configuration options are available when enabling static website hosting?
+A:: When enabling static website hosting, you can specify the default index document name and error document path.
+
+Q:: What is the impact of modifying the public access level of the _$web_ container?
+A:: Modifying the public access level of the _$web_ container does not impact the primary static website endpoint, but it does impact the primary blob service endpoint.
+
+Q:: How does changing the public access level of the _$web_ container affect the primary static website endpoint?
+A:: Changing the public access level of the _$web_ container does not change the level of public access to the primary static website endpoint.
+
+Q:: Does disabling public access on a storage account affect static websites hosted in that storage account?
+A:: Disabling public access on a storage account does not affect static websites hosted in that storage account.
+
+Q:: What is the process for mapping a custom domain to a static website URL?
+A:: The process involves enabling HTTP access for the custom domain, and for HTTPS, using Azure CDN as Azure Storage does not natively support HTTPS with custom domains.
+
+Q:: What type of access does Azure Storage natively support for custom domains?
+A:: Azure Storage natively supports HTTP access for custom domains.
+
+Q:: What service is required to enable HTTPS for custom domains with Azure Storage?
+A:: To enable HTTPS for custom domains with Azure Storage, Azure CDN needs to be used as Azure Storage does not natively support HTTPS with custom domains.
+
 #### Chapter 2 - Manage the Azure Blob storage lifecycle
 
 #### Chapter 3 - Work with Azure Blob storage
