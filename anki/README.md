@@ -1445,6 +1445,216 @@ A:: Metadata headers are named with the prefix x-ms-meta- and a custom name, whi
 
 #### Chapter 1 - Explore Azure Cosmos DB
 
+Q:: What is Azure Cosmos DB designed to provide?
+A:: Azure Cosmos DB is designed to provide low latency, elastic scalability of throughput, well-defined semantics for data consistency, and high availability.
+
+Q:: How can you configure your databases with Azure Cosmos DB?
+A:: You can configure your databases to be globally distributed and available in any of the Azure regions. To lower the latency, place the data close to where your users are. Choosing the required regions depends on the global reach of your application and where your users are located.
+
+Q:: What benefits does global distribution offer with Azure Cosmos DB?
+A:: Global distribution offers benefits such as unlimited elastic write and read scalability, 99.999% read and write availability worldwide, and guaranteed reads and writes served in less than 10 milliseconds at the 99th percentile.
+
+Q:: Explain the multi-master replication protocol in Azure Cosmos DB.
+A:: With its novel multi-master replication protocol, every region supports both writes and reads. The multi-master capability enables near real-time reads and writes against all the regions chosen for the database, with Azure Cosmos DB internally handling the data replication between regions with consistency level guarantees.
+
+Q:: What are some advantages of running a database in multiple regions worldwide with Azure Cosmos DB?
+A:: Running a database in multiple regions worldwide increases the availability of a database. If one region is unavailable, other regions automatically handle application requests. Azure Cosmos DB offers 99.999% read and write availability for multi-region databases.
+
+Q:: How does Azure Cosmos DB handle data replication between regions?
+A:: Azure Cosmos DB internally handles the data replication between regions with consistency level guarantees of the level you've selected.
+
+Q:: What level of read and write availability does Azure Cosmos DB offer for multi-region databases?
+A:: Azure Cosmos DB offers 99.999% read and write availability for multi-region databases.
+
+Q:: Can you add or remove regions associated with your Azure Cosmos DB account without pausing or redeploying your application?
+A:: Yes, with Azure Cosmos DB, you can add or remove the regions associated with your account at any time without pausing or redeploying your application.
+
+Q:: What is the fundamental unit of global distribution and high availability in Azure Cosmos DB?
+A:: The Azure Cosmos DB account is the fundamental unit of global distribution and high availability.
+
+Q:: How can you manage an Azure Cosmos DB account?
+A:: You can manage an account by using the Azure portal or the Azure CLI, or by using different language-specific SDKs.
+
+Q:: How can you globally distribute your data and throughput in Azure Cosmos DB?
+A:: You can add and remove Azure regions to your account at any time for globally distributing your data and throughput across multiple Azure regions.
+
+Q:: What is the maximum number of Azure Cosmos DB accounts you can create under an Azure subscription by default?
+A:: You can create a maximum of 50 Azure Cosmos DB accounts under an Azure subscription by default.
+
+Q:: What are the elements in an Azure Cosmos DB account?
+A:: The elements include databases, containers, and items.
+
+Q:: Describe the hierarchy of different entities in an Azure Cosmos DB account.
+A:: Azure Cosmos DB accounts are at the top, databases are grouped under accounts, and containers are grouped under databases.
+
+Q:: What is the fundamental unit of scalability in Azure Cosmos DB?
+A:: An Azure Cosmos DB container is the fundamental unit of scalability.
+
+Q:: How does Azure Cosmos DB transparently partition containers?
+A:: Azure Cosmos DB transparently partitions containers using the logical partition key specified to elastically scale provisioned throughput and storage.
+
+Q:: How many Azure Cosmos DB databases can you create under your account?
+A:: You can create one or multiple Azure Cosmos DB databases under your account.
+
+Q:: What is an Azure Cosmos DB container analogous to?
+A:: A database is analogous to a namespace in Azure Cosmos DB.
+
+Q:: How are items added to an Azure Cosmos DB container grouped?
+A:: Items added to a container are automatically grouped into logical partitions, which are distributed across physical partitions based on the partition key.
+
+Q:: What are the two modes of throughput configuration when creating a container in Azure Cosmos DB?
+A:: The two modes are dedicated provisioned throughput mode and shared provisioned throughput mode.
+
+Q:: Describe the dedicated provisioned throughput mode.
+A:: In the dedicated provisioned throughput mode, the throughput provisioned on a container is exclusively reserved for that container and backed by SLAs.
+
+Q:: Explain the shared provisioned throughput mode.
+A:: In the shared provisioned throughput mode, containers share the provisioned throughput with others in the same database, excluding containers with dedicated provisioned throughput.
+
+Q:: What is a schema-agnostic container of items in Azure Cosmos DB?
+A:: A container is a schema-agnostic container of items in Azure Cosmos DB.
+
+Q:: How are items indexed by default in an Azure Cosmos DB container?
+A:: By default, all items added to a container are automatically indexed without requiring explicit index or schema management.
+
+Q:: What can an Azure Cosmos DB item represent, depending on the API used?
+A:: Depending on the API used, an Azure Cosmos DB item can represent either a document in a collection, a row in a table, or a node or edge in a graph.
+
+Q:: How does Azure Cosmos DB approach data consistency?
+A:: Azure Cosmos DB approaches data consistency as a spectrum of choices instead of two extremes.
+
+Q:: What are the extremes of the consistency spectrum in Azure Cosmos DB?
+A:: The extremes of the consistency spectrum in Azure Cosmos DB are strong consistency and eventual consistency.
+
+Q:: How does Azure Cosmos DB offer consistency levels?
+A:: Azure Cosmos DB offers five well-defined levels of consistency.
+
+Q:: Can you name the five well-defined consistency levels in Azure Cosmos DB from strongest to weakest?
+A:: The five well-defined consistency levels in Azure Cosmos DB from strongest to weakest are: Strong, Bounded staleness, Session, Consistent prefix, and Eventual.
+
+Q:: What tradeoffs do developers make when choosing different consistency levels in Azure Cosmos DB?
+A:: Developers make availability and performance tradeoffs when choosing different consistency levels in Azure Cosmos DB.
+
+Q:: What does the image in the text illustrate?
+A:: The image in the text illustrates the different consistency levels as a spectrum.
+
+Q:: Are the consistency levels in Azure Cosmos DB region-agnostic?
+A:: Yes, the consistency levels in Azure Cosmos DB are region-agnostic.
+
+Q:: What is the scope of read consistency in Azure Cosmos DB?
+A:: Read consistency in Azure Cosmos DB applies to a single read operation scoped within a partition-key range or a logical partition.
+
+Q:: Who can issue a read operation in Azure Cosmos DB?
+A:: A read operation in Azure Cosmos DB can be issued by a remote client or a stored procedure.
+
+Q:: Is consistency guaranteed for all operations regardless of various factors in Azure Cosmos DB?
+A:: Yes, consistency is guaranteed for all operations regardless of the region from which the reads and writes are served, the number of regions associated with your Azure Cosmos DB account, or whether your account is configured with a single or multiple write regions.
+
+Q:: How can you configure the default consistency level in Azure Cosmos DB?
+A:: You can configure the default consistency level on your Azure Cosmos DB account at any time.
+
+Q:: What is the scope of read consistency in Azure Cosmos DB?
+A:: Read consistency applies to a single read operation scoped within a logical partition.
+
+Q:: What guarantees does Azure Cosmos DB provide for read requests based on the chosen consistency level?
+A:: Azure Cosmos DB guarantees that 100 percent of read requests meet the consistency guarantee for the consistency level chosen.
+
+Q:: Define strong consistency in Azure Cosmos DB.
+A:: Strong consistency offers a linearizability guarantee.
+
+Q:: What is the key guarantee provided by strong consistency?
+A:: The reads are guaranteed to return the most recent committed version of an item.
+
+Q:: Describe bounded staleness consistency in Azure Cosmos DB.
+A:: In bounded staleness consistency, the reads are guaranteed to honor the consistent-prefix guarantee.
+
+Q:: What are the configurable parameters for staleness in bounded staleness consistency?
+A:: The number of versions (K) of the item and The time interval (T) reads might lag behind the writes.
+
+Q:: What are the minimum values for K and T in bounded staleness consistency for a single region account?
+A:: For a single region account, the minimum value of K and T is 10 write operations or 5 seconds.
+
+Q:: How does session consistency work in Azure Cosmos DB?
+A:: In session consistency, within a single client session reads are guaranteed to honor the consistent-prefix, monotonic reads, monotonic writes, read-your-writes, and write-follows-reads guarantees.
+
+Q:: List the guarantees provided by session consistency within a single client session.
+A:: Consistent-prefix, monotonic reads, monotonic writes, read-your-writes, and write-follows-reads guarantees.
+
+Q:: Explain the concept of consistent prefix consistency in Azure Cosmos DB.
+A:: In consistent prefix, updates made as single document writes see eventual consistency.
+
+Q:: What is the behavior of write operations within a transaction in consistent prefix consistency?
+A:: Write operations within a transaction of multiple documents are always visible together.
+
+Q:: What is eventual consistency in Azure Cosmos DB?
+A:: In eventual consistency, there's no ordering guarantee for reads.
+
+Q:: Describe the characteristics of eventual consistency.
+A:: Eventual consistency is the weakest form of consistency because a client may read the values that are older than the ones it read before.
+
+Q:: When is eventual consistency considered ideal in an application?
+A:: Eventual consistency is ideal where the application doesn't require any ordering guarantees.
+
+Q:: What are the supported APIs in Azure Cosmos DB?
+A:: Azure Cosmos DB offers multiple database APIs, which include: Azure Cosmos DB for NoSQL, Azure Cosmos DB for MongoDB, Azure Cosmos DB for PostgreSQL, Azure Cosmos DB for Apache Cassandra, Azure Cosmos DB for Table, Azure Cosmos DB for Apache Gremlin.
+
+Q:: What are the considerations when choosing an API other than NoSQL?
+A:: Considerations for choosing an API other than NoSQL include having existing MongoDB, PostgreSQL, Cassandra, or Gremlin applications, not wanting to rewrite the entire data access layer, and wanting to utilize the open-source developer ecosystem, client-drivers, expertise, and resources for your database.
+
+Q:: What features does the API for NoSQL offer?
+A:: The Azure Cosmos DB API for NoSQL stores data in document format and provides full control over the interface, service, and SDK client libraries. New features rolled out to Azure Cosmos DB are first available on API for NoSQL accounts, which also support querying items using the Structured Query Language (SQL) syntax.
+
+Q:: How does the API for MongoDB store data?
+A:: The Azure Cosmos DB API for MongoDB stores data in a document structure via BSON format. While it's compatible with MongoDB wire protocol, it doesn't use any native MongoDB related code.
+
+Q:: Why would someone choose the API for PostgreSQL in Azure Cosmos DB?
+A:: The API for PostgreSQL in Azure Cosmos DB is a managed service for running PostgreSQL at any scale, with the Citus open source superpower of distributed tables. It stores data either on a single node or distributed in a multi-node configuration.
+
+Q:: How does the API for Apache Cassandra store data?
+A:: The Azure Cosmos DB API for Cassandra stores data in a column-oriented schema. It aligns with the distributed, horizontally scaling approach of Apache Cassandra while being wire protocol compatible with native Apache Cassandra.
+
+Q:: What are the scenarios suitable for using the API for Apache Gremlin?
+A:: The API for Apache Gremlin is suitable for scenarios involving dynamic data, complex relations, data too complex to be modeled with relational databases, and for utilizing the existing Gremlin ecosystem and skills.
+
+Q:: In what format does the API for Table store data?
+A:: The Azure Cosmos DB API for Table stores data in key/value format.
+
+Q:: What are the limitations of using Azure Table storage compared to the API for Table in Azure Cosmos DB?
+A:: Azure Table storage may have limitations in latency, scaling, throughput, global distribution, index management, and low query performance compared to the API for Table in Azure Cosmos DB, which overcomes these limitations. The API for Table only supports OLTP scenarios.
+
+Q:: Which API is native to Azure Cosmos DB?
+A:: The API for NoSQL is native to Azure Cosmos DB.
+
+Q:: What are request units (RUs) in Azure Cosmos DB?
+A:: Request units (RUs) in Azure Cosmos DB represent the system resources such as CPU, IOPS, and memory required to perform the database operations supported by Azure Cosmos DB.
+
+Q:: How are database operations costed in Azure Cosmos DB?
+A:: All database operations in Azure Cosmos DB are normalized and expressed in terms of request units (RUs), which represent the cost of the system resources needed to perform those operations.
+
+Q:: What does 1RU represent in Azure Cosmos DB?
+A:: In Azure Cosmos DB, 1RU represents the cost to perform a point read operation, which involves fetching a single item by its ID and partition key value for a 1-KB item.
+
+Q:: How does Azure Cosmos DB measure the cost of database operations?
+A:: Azure Cosmos DB measures the cost of database operations in request units (RUs). Whether the operation is a write, point read, or query, costs are measured in RUs.
+
+Q:: Describe the three modes in which you can create an Azure Cosmos DB account.
+A:: The three modes for creating an Azure Cosmos DB account are: Provisioned throughput mode, Serverless mode, and Autoscale mode.
+
+Q:: What is provisioned throughput mode in Azure Cosmos DB?
+A:: Provisioned throughput mode in Azure Cosmos DB requires you to provision the number of RUs for your application on a per-second basis in increments of 100 RUs per second. You can scale the provisioned throughput at any time programmatically or using the Azure portal.
+
+Q:: Explain serverless mode in Azure Cosmos DB.
+A:: Serverless mode in Azure Cosmos DB allows you to create resources without provisioning any throughput. At the end of your billing period, you get billed for the number of request units consumed by your database operations.
+
+Q:: What is autoscale mode in Azure Cosmos DB used for?
+A:: Autoscale mode in Azure Cosmos DB allows you to automatically and instantly scale the throughput (RU/s) of your database or container based on its usage. This mode is suitable for mission-critical workloads with variable or unpredictable traffic patterns.
+
+Q:: How do you scale provisioned throughput in Azure Cosmos DB?
+A:: In Azure Cosmos DB, you can scale provisioned throughput by increasing or decreasing the number of RUs at any time in increments or decrements of 100 RUs. This can be done programmatically or through the Azure portal.
+
+Q:: What is the billing model for serverless mode in Azure Cosmos DB?
+A:: In serverless mode, you don't have to provision any throughput upfront. Instead, at the end of your billing period, you get billed for the number of request units consumed by your database operations.
+
 #### Chapter 2 - Work with Azure Cosmos DB
 
 ### Part V - Implement containerized solutions
