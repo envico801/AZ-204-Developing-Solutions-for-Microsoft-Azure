@@ -1053,6 +1053,206 @@ A:: To enable HTTPS for custom domains with Azure Storage, Azure CDN needs to be
 
 #### Chapter 2 - Manage the Azure Blob storage lifecycle
 
+Q:: What are the different access tiers offered by Azure Blob storage?
+A:: The different access tiers offered by Azure Blob storage are Hot, Cool, Cold, and Archive.
+
+Q:: How does the Cool access tier differ from the Cold tier in Azure Blob storage?
+A:: The Cool access tier is optimized for storing data that is infrequently accessed and stored for a minimum of 30 days, while the Cold tier is optimized for storing data that is infrequently accessed and stored for a minimum of 90 days.
+
+Q:: Can you set the access tier for a blob after it has been uploaded?
+A:: Yes, the access tier can be set for a blob during or after upload in Azure Blob storage.
+
+Q:: What are the considerations for data stored in the Archive access tier?
+A:: Data stored in the Archive access tier is stored offline and offers the lowest storage costs but also the highest access costs and latency in Azure Blob storage.
+
+Q:: How do storage limits work in Azure Blob storage across different access tiers?
+A:: Storage limits in Azure Blob storage are set at the account level and not per access tier. Users can choose to use all of their limit in one tier or across all three tiers.
+
+Q:: What options does Azure Blob storage lifecycle management offer for managing data lifecycles?
+A:: Azure Blob storage lifecycle management offers options to transition blobs to cooler storage tiers, delete blobs at the end of their lifecycles, define rules to be run at the storage account level, and apply rules to containers or a subset of blobs.
+
+Q:: Can you describe a scenario where different access tiers might be used in Azure Blob storage?
+A:: In a scenario where data gets frequent access during the early stages of the lifecycle but only occasionally after two weeks, and beyond the first month, the data set is rarely accessed, hot storage is suitable during the early stages, cool storage is appropriate for occasional access, and archive storage is best after the data ages over a month.
+
+Q:: What limitations exist when trying to transition data in a premium block blob storage account to different tiers?
+A:: Data stored in a premium block blob storage account cannot be tiered to Hot, Cool, or Archive using Set Blob Tier or Azure Blob Storage lifecycle management directly.
+
+Q:: How can you move data from a premium block blob storage account to other tiers in Azure Blob storage?
+A:: To move data from a premium block blob storage account to other tiers in Azure Blob storage, you must synchronously copy blobs from the block blob storage account to the Hot tier in a different account using the Put Block From URL API or a version of AzCopy that supports this API.
+
+Q:: Why might you want to adjust storage tiers based on the age of data in Azure Blob storage?
+A:: Adjusting storage tiers based on the age of data in Azure Blob storage allows users to optimize storage costs by using the least expensive storage options for their needs as data ages.
+
+Q:: What constitutes a lifecycle management policy in Blob storage?
+A:: A lifecycle management policy in Blob storage is a collection of rules in a JSON document that define actions to be taken on certain objects within a container based on specified conditions.
+
+Q:: Describe the components of a rule within a lifecycle management policy.
+A:: A rule within a lifecycle management policy consists of a name, an optional boolean to enable or disable the rule, a type (such as "Lifecycle"), and a definition that includes filter sets and action sets.
+
+Q:: What does a rule definition consist of in a Blob storage lifecycle management policy?
+A:: A rule definition in Blob storage lifecycle management policy includes filter sets and action sets. Filter sets restrict rule actions to specific objects within a container, while action sets apply tier or delete actions to the filtered objects.
+
+Q:: How are rules organized within a policy in Blob storage lifecycle management?
+A:: Rules within a policy in Blob storage lifecycle management are organized as an array of rule objects under the `rules` parameter.
+
+Q:: Explain the significance of the `rules` parameter in a Blob storage lifecycle management policy.
+A:: The `rules` parameter in a Blob storage lifecycle management policy is where the collection of rules defining actions on objects within a container is specified. At least one rule is required, and up to 100 rules can be defined in a policy.
+
+Q:: What are the parameters associated with each rule in a Blob storage lifecycle management policy?
+A:: Parameters associated with each rule in a Blob storage lifecycle management policy include `name`, `enabled`, `type`, and `definition`.
+
+Q:: What is the purpose of the `enabled` parameter within a rule definition?
+A:: The `enabled` parameter within a rule definition allows for the temporary disabling of a rule. Its default value is true if not set explicitly.
+
+Q:: Identify the valid types that can be assigned to a rule in a Blob storage lifecycle management policy.
+A:: The valid type that can be assigned to a rule in a Blob storage lifecycle management policy is "Lifecycle".
+
+Q:: Describe the structure of a rule definition in Blob storage lifecycle management.
+A:: A rule definition in Blob storage lifecycle management consists of filter sets and action sets. Filters limit rule actions to specific objects, while actions define the tier or delete actions to be applied to the filtered objects.
+
+Q:: What are the functions of rule filters in Blob storage lifecycle management?
+A:: Rule filters in Blob storage lifecycle management limit rule actions to a subset of blobs within the storage account based on specified criteria.
+
+Q:: Enumerate the types of filters available for rule definition in Blob storage lifecycle management.
+A:: Types of filters available for rule definition in Blob storage lifecycle management include `blobTypes`, `prefixMatch`, and `blobIndexMatch`.
+
+Q:: How do filters impact rule actions within a Blob storage lifecycle management policy?
+A:: Filters in Blob storage lifecycle management restrict rule actions to specific subsets of blobs within the storage account, ensuring that actions are applied only to relevant objects.
+
+Q:: What actions can be applied to filtered blobs within a Blob storage lifecycle management policy?
+A:: Actions that can be applied to filtered blobs within a Blob storage lifecycle management policy include tiering blobs to different storage tiers and deleting blobs or blob snapshots based on specified conditions.
+
+Q:: Explain the conditions under which actions are executed in Blob storage lifecycle management.
+A:: Actions in Blob storage lifecycle management are executed based on specified conditions, such as the age of the blob or blob snapshot, as defined in the action sets of the rule definitions.
+
+Q:: How does Blob storage lifecycle management determine the age of blobs for action execution?
+A:: Blob storage lifecycle management determines the age of blobs for action execution based on factors like the last modified time for base blobs and the snapshot creation time for blob snapshots.
+
+Q:: Discuss the conditions under which different actions are applied to blobs in Blob storage lifecycle management.
+A:: Different actions in Blob storage lifecycle management are applied to blobs based on conditions such as the number of days after modification or creation, as specified in the action sets of the rule definitions.
+
+Q:: Can multiple actions be defined for the same blob in Blob storage lifecycle management? If so, how are they prioritized?
+A:: Yes, multiple actions can be defined for the same blob in Blob storage lifecycle management. In such cases, the least expensive action is applied to the blob, considering factors like deletion being cheaper than tiering.
+
+Q:: Describe the conditions associated with the `daysAfterLastTierChangeGreaterThan` parameter in Blob storage lifecycle management.
+A:: The `daysAfterLastTierChangeGreaterThan` parameter in Blob storage lifecycle management applies only to `tierToArchive` actions and specifies the number of days after the last blob tier change time. This condition can be used in conjunction with the `daysAfterModificationGreaterThan` condition.
+
+Q:: How can you implement Blob storage lifecycle policies in Azure?
+A:: You can implement Blob storage lifecycle policies in Azure through methods such as the Azure portal, Azure PowerShell, Azure CLI, and REST APIs.
+
+Q:: What are the methods available for adding, editing, or removing a policy in Blob storage?
+A:: The methods available for adding, editing, or removing a policy in Blob storage include Azure portal, Azure PowerShell, Azure CLI, and REST APIs.
+
+Q:: Describe the steps to add a policy through the Azure portal List view.
+A:: To add a policy through the Azure portal List view, sign in to the Azure portal, select All resources, choose your storage account, navigate to Data management, select Lifecycle management, choose the List view tab, add a rule, fill out the Action set form fields, add an optional filter, review the policy settings, and finally, add the new policy.
+
+Q:: Explain the steps involved in adding a policy through the Azure portal Code view.
+A:: To add a policy through the Azure portal Code view, follow similar steps as the List view, but instead, select the Code view tab, provide a JSON example of the policy, and save the configuration.
+
+Q:: How do you add a lifecycle management policy using Azure CLI?
+A:: To add a lifecycle management policy using Azure CLI, you need to write the policy to a JSON file and then call the `az storage account management-policy create` command, specifying the storage account, policy file, and resource group.
+
+Q:: What is required before calling the `az storage account management-policy create` command in Azure CLI?
+A:: Before calling the `az storage account management-policy create` command in Azure CLI, you need to write the policy to a JSON file.
+
+Q:: Can you perform partial updates when working with a lifecycle management policy?
+A:: No, partial updates aren't supported when working with a lifecycle management policy.
+
+Q:: Provide an example of a policy JSON used to move a block blob to the cool tier after a certain duration.
+A:: 
+```JSON
+{
+  "rules": [
+    {
+      "enabled": true,
+      "name": "move-to-cool",
+      "type": "Lifecycle",
+      "definition": {
+        "actions": {
+          "baseBlob": {
+            "tierToCool": {
+              "daysAfterModificationGreaterThan": 30
+            }
+          }
+        },
+        "filters": {
+          "blobTypes": [
+            "blockBlob"
+          ],
+          "prefixMatch": [
+            "sample-container/log"
+          ]
+        }
+      }
+    }
+  ]
+}
+```
+
+Q:: What are the criteria specified in the JSON example for moving blobs to the cool tier?
+A:: Blobs are moved to the cool tier if they are block blobs and if their name begins with "sample-container/log" and they haven't been modified for 30 days.
+
+Q:: What happens if blobs haven't been modified for 30 days according to the provided JSON example?
+A:: According to the provided JSON example, if blobs haven't been modified for 30 days, they are moved to the cool tier.
+
+Q:: What happens to a blob in the archive access tier?
+A:: While a blob is in the archive access tier, it's considered to be offline and can't be read or modified.
+
+Q:: Why is it necessary to rehydrate a blob from the archive tier?
+A:: In order to read or modify data in an archived blob, you must first rehydrate the blob to an online tier, either the hot or cool tier.
+
+Q:: What are the two options for rehydrating a blob stored in the archive tier?
+A:: The two options for rehydrating a blob stored in the archive tier are:
+1. Copy an archived blob to an online tier.
+2. Change a blob's access tier to an online tier.
+
+Q:: How can you rehydrate an archived blob by copying it to an online tier?
+A:: You can rehydrate an archived blob by copying it to a new blob in the hot or cool tier using the Copy Blob or Copy Blob from URL operation.
+
+Q:: What operation can you use to change a blob's access tier from archive to an online tier?
+A:: You can change a blob's access tier from archive to an online tier using the Set Blob Tier operation.
+
+Q:: How long can rehydrating a blob from the archive tier take?
+A:: Rehydrating a blob from the archive tier can take several hours to complete.
+
+Q:: What does Microsoft recommend regarding rehydrating larger blobs?
+A:: Microsoft recommends rehydrating larger blobs for optimal performance.
+
+Q:: What is the purpose of the `x-ms-rehydrate-priority` header?
+A:: The purpose of the `x-ms-rehydrate-priority` header is to set the priority for the rehydration operation.
+
+Q:: What are the priority options for rehydration?
+A:: The priority options for rehydration are:
+1. Standard priority
+2. High priority
+
+Q:: How can you check the rehydration priority while the operation is underway?
+A:: You can check the rehydration priority while the operation is underway by calling Get Blob Properties to return the value of the `x-ms-rehydrate-priority` header.
+
+Q:: What happens to the source blob when you copy an archived blob to an online tier?
+A:: When you copy an archived blob to a new blob in an online tier, the source blob remains unmodified in the archive tier.
+
+Q:: What restrictions apply when copying an archived blob to an online destination tier?
+A:: You can only copy an archived blob to a destination within the same storage account, and you can't copy to a destination blob that is also in the archive tier.
+
+Q:: Can you overwrite the source blob by copying to the same blob?
+A:: No, you can't overwrite the source blob by copying to the same blob.
+
+Q:: What are the supported destinations for copying an archived blob?
+A:: The supported destinations for copying an archived blob include the hot tier, the cool tier, and within the same account, but they require blob rehydration.
+
+Q:: What happens once a Set Blob Tier request is initiated?
+A:: Once a Set Blob Tier request is initiated, it can't be canceled, and during the rehydration operation, the blob's access tier setting continues to show as archived until the rehydration process is complete.
+
+Q:: What caution should you be aware of when changing a blob's tier?
+A:: When changing a blob's tier, be aware that it doesn't affect its last modified time.
+
+Q:: How does changing a blob's tier affect its last modified time?
+A:: Changing a blob's tier doesn't affect its last modified time.
+
+Q:: What potential scenario might occur if there's a lifecycle management policy in effect for the storage account after rehydration?
+A:: If there is a lifecycle management policy in effect for the storage account, rehydrating a blob with Set Blob Tier can result in a scenario where the lifecycle policy moves the blob back to the archive tier after rehydration because the last modified time is beyond the threshold set for the policy.
+
 #### Chapter 3 - Work with Azure Blob storage
 
 ### Part IV - Develop solutions that use Azure Cosmos DB
