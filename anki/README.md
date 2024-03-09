@@ -639,6 +639,130 @@ A:: By default, new slots are given a routing rule of `0%`. Users can access the
 
 #### Chapter 1 - Explore Azure Functions
 
+Q:: What is Azure Functions and how does it simplify development?
+A:: Azure Functions is a serverless solution that allows developers to write less code, maintain less infrastructure, and save on costs. It eliminates the need to worry about deploying and maintaining servers, as the cloud infrastructure provides all the necessary resources to keep applications running.
+
+Q:: What are triggers and bindings in Azure Functions, and how do they help in coding?
+A:: Triggers in Azure Functions are ways to start the execution of code, while bindings are ways to simplify coding for input and output data. Triggers enable the execution of code in response to specific events, while bindings simplify the integration of input and output data without requiring complex coding.
+
+Q:: How do Azure Functions and Azure Logic Apps differ in terms of their primary functionalities?
+A:: Azure Functions is a serverless compute service focused on executing code in response to events, while Azure Logic Apps is a serverless workflow integration platform used for orchestrating complex tasks through a series of actions.
+
+Q:: Explain the concept of orchestrations in Azure Functions and Azure Logic Apps.
+A:: Orchestrations in Azure Functions and Azure Logic Apps refer to the arrangement and coordination of functions or steps to accomplish a complex task. In Azure Functions, orchestrations are developed by writing code and using the Durable Functions extension, while in Azure Logic Apps, orchestrations are created using a GUI or editing configuration files.
+
+Q:: How do you develop orchestrations in Azure Functions compared to Azure Logic Apps?
+A:: Orchestrations in Azure Functions are developed by writing code and using the Durable Functions extension, whereas in Azure Logic Apps, orchestrations are created using a graphical user interface (GUI) or by editing configuration files.
+
+Q:: What are the key differences between Azure Functions and Azure Logic Apps regarding development, connectivity, actions, monitoring, and management?
+A::
+- Development: Azure Functions is code-first (imperative), while Azure Logic Apps is designer-first (declarative).
+- Connectivity: Azure Functions has about a dozen built-in binding types, while Azure Logic Apps has a large collection of connectors.
+- Actions: Each activity in Azure Functions is an Azure function, whereas Azure Logic Apps offers a large collection of ready-made actions.
+- Monitoring: Azure Functions use Azure Application Insights for monitoring, while Azure Logic Apps use the Azure portal and Azure Monitor logs.
+- Management: Azure Functions can be managed through the REST API and Visual Studio, while Azure Logic Apps can be managed through the Azure portal, REST API, PowerShell, and Visual Studio.
+
+Q:: Compare Azure Functions with Azure App Service WebJobs with the WebJobs SDK.
+A:: Azure Functions and Azure App Service WebJobs with the WebJobs SDK are both code-first integration services designed for developers. They share many features such as source control integration, authentication, and monitoring with Application Insights integration.
+
+Q:: What are the factors to consider when choosing between Azure Functions and WebJobs with the WebJobs SDK?
+A:: Factors to consider include the serverless app model with automatic scaling, the ability to develop and test in the browser, pay-per-use pricing, integration with Logic Apps, and trigger events supported by each service.
+
+Q:: What are the similarities between Azure Functions and WebJobs with the WebJobs SDK?
+A:: Both Azure Functions and WebJobs with the WebJobs SDK are built on Azure App Service and support features such as source control integration, authentication, and monitoring with Application Insights integration.
+
+Q:: How do Azure Functions and WebJobs with the WebJobs SDK differ in terms of their serverless app model, development and testing options, pricing, integration with Logic Apps, and trigger events?
+A::
+- Serverless app model with automatic scaling: Azure Functions support this feature, while WebJobs with the WebJobs SDK do not.
+- Develop and test in browser: Azure Functions support this feature, while WebJobs with the WebJobs SDK do not.
+- Pay-per-use pricing: Azure Functions offer pay-per-use pricing, while WebJobs with the WebJobs SDK do not.
+- Integration with Logic Apps: Azure Functions integrate with Logic Apps, while WebJobs with the WebJobs SDK do not.
+- Trigger events: Azure Functions support a variety of trigger events including Timer, Azure Storage queues and blobs, Azure Service Bus queues and topics, Azure Cosmos DB, Azure Event Hubs, and HTTP/WebHook, while WebJobs with the WebJobs SDK support Timer, Azure Storage queues and blobs, Azure Service Bus queues and topics, Azure Cosmos DB, Azure Event Hubs, and the file system.
+
+Q:: What are the three basic hosting plans available for Azure Functions?
+A:: The three basic hosting plans available for Azure Functions are the Consumption plan, the Premium plan, and the Dedicated plan.
+
+Q:: How does the Consumption plan scale and what are its benefits?
+A:: The Consumption plan scales automatically based on demand, and you only pay for compute resources when your functions are running. Instances of the Functions host are dynamically added and removed based on the number of incoming events.
+
+Q:: Describe the scaling behavior of the Premium plan.
+A:: The Premium plan scales automatically based on demand using pre-warmed workers, which run applications with no delay after being idle. It runs on more powerful instances and connects to virtual networks.
+
+Q:: What are the benefits of the Premium plan compared to other hosting options?
+A:: The Premium plan offers benefits such as automatic scaling, pre-warmed workers, running on more powerful instances, and connecting to virtual networks.
+
+Q:: What is the Dedicated plan suitable for, and why might you choose it?
+A:: The Dedicated plan is suitable for scenarios where Durable Functions can't be used. It runs functions within an App Service plan at regular App Service plan rates, making it best for long-running scenarios.
+
+Q:: Explain the details of the App Service Environment (ASE) as a hosting option.
+A:: App Service Environment (ASE) provides a fully isolated and dedicated environment for securely running App Service apps at high scale.
+
+Q:: How does Kubernetes provide isolation and control for running function apps?
+A:: Kubernetes provides a fully isolated and dedicated environment running on top of the Kubernetes platform, offering high levels of control and isolation for running function apps.
+
+Q:: Compare the maximum number of instances allowed in different hosting plans.
+A:: Consumption plan: Windows - 200, Linux - 100; Premium plan: Windows - 100, Linux - 20-100; Dedicated plan: 10-20; ASE: 100; Kubernetes: Varies by cluster.
+
+Q:: What is the significance of the `functionTimeout` property in the host.json project file?
+A:: The `functionTimeout` property specifies the timeout duration for functions in a function app. It determines the maximum time a function has to respond after being triggered.
+
+Q:: What are the default and maximum timeout values for functions in the Consumption plan?
+A:: Default: 5 minutes, Maximum: 10 minutes.
+
+Q:: Why is a general Azure Storage account required for a function app?
+A:: A general Azure Storage account is required for a function app because Functions rely on Azure Storage for operations such as managing triggers and logging function executions.
+
+Q:: Can the same storage account used by a function app be used by triggers and bindings? If not, why?
+A:: Yes, the same storage account used by a function app can also be used by triggers and bindings to store application data.
+
+Q:: When should a separate storage account be considered for storage-intensive operations?
+A:: For storage-intensive operations, a separate storage account should be considered to avoid potential performance issues and to better manage application data.
+
+Q:: How does Azure Functions scale CPU and memory resources in the Consumption and Premium plans?
+A:: Azure Functions scales CPU and memory resources in the Consumption and Premium plans by adding more instances of the Functions host based on the number of events that trigger a function.
+
+Q:: What determines the number of instances in the Consumption plan?
+A:: The number of instances in the Consumption plan is determined by the number of events that trigger a function.
+
+Q:: What are the limitations on memory and CPU for each instance in the Consumption plan?
+A:: Each instance of the Functions host in the Consumption plan is limited to 1.5 GB of memory and one CPU.
+
+Q:: Describe the storage of function code files in Azure Functions.
+A:: Function code files are stored on Azure Files shares on the function's main storage account.
+
+Q:: What happens to function code files when you delete the main storage account of a function app?
+A:: When you delete the main storage account of the function app, the function code files are deleted and can't be recovered.
+
+Q:: What is the role of the scale controller in Azure Functions?
+A:: The scale controller in Azure Functions monitors the rate of events and determines whether to scale out or scale in.
+
+Q:: How does the scale controller determine whether to scale out or scale in?
+A:: The scale controller uses heuristics for each trigger type, such as queue length and the age of the oldest queue message, to determine whether to scale out or scale in.
+
+Q:: What is the unit of scale for Azure Functions?
+A:: The unit of scale for Azure Functions is the function app.
+
+Q:: What is a "cold start" in Azure Functions, and why does it occur?
+A:: A "cold start" in Azure Functions refers to the added latency when the platform scales the number of instances from zero to one after the function app has been idle for a number of minutes.
+
+Q:: What factors can cause scaling variations in Azure Functions?
+A:: Scaling variations in Azure Functions can be caused by factors such as trigger type and selected language.
+
+Q:: What is the maximum number of instances a single function app can scale out to?
+A:: A single function app can scale out to a maximum of 200 instances.
+
+Q:: How often are new instances allocated for HTTP triggers and non-HTTP triggers?
+A:: For HTTP triggers, new instances are allocated at most once per second. For non-HTTP triggers, new instances are allocated at most once every 30 seconds.
+
+Q:: Why might you want to limit the scale-out of an Azure Functions app?
+A:: You might want to limit the scale-out of an Azure Functions app, especially for cases where downstream components like databases have limited throughput.
+
+Q:: What is the default maximum number of instances for Consumption plan functions?
+A:: By default, Consumption plan functions scale out to as many as 200 instances.
+
+Q:: How can you specify a lower maximum for the number of instances in an Azure Functions app?
+A:: You can specify a lower maximum for the number of instances in an Azure Functions app by modifying the `functionAppScaleLimit` value, which can be set to `0` or `null` for unrestricted, or a valid value between `1` and the app maximum.
+
 #### Chapter 2 - Develop Azure Functions
 
 ### Part III - Develop solutions that use Blob storage
