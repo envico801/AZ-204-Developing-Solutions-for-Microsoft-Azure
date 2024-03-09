@@ -270,6 +270,91 @@ A:: App Service Certificates are not supported in Azure National Clouds at the p
 
 #### Chapter 3 - Scale apps in Azure App Service
 
+Q:: What triggers autoscaling in a system?
+A:: Autoscaling can be triggered based on factors such as CPU utilization, memory occupancy, incoming request surges, or a combination of these.
+Q:: How does autoscaling differ from scaling up and down?
+A:: Autoscaling adjusts available resources based on demand by scaling in and out, as opposed to scaling up and down.
+Q:: What is Azure App Service Autoscaling, and how does it function?
+A:: Azure App Service Autoscaling monitors resource metrics of a web app and adds or removes web servers to handle increasing workloads while balancing the load between them.
+Q:: What are autoscaling rules, and how do they function?
+A:: Autoscaling rules define thresholds for metrics and trigger autoscale events when thresholds are crossed. These rules can also deallocate resources when workload diminishes.
+Q:: When should autoscaling be considered?
+A:: Autoscaling should be considered for providing elasticity, improving availability and fault tolerance, and handling short-term workload fluctuations, such as during holidays or sudden spikes in activity.
+Q:: What are the limitations of autoscaling?
+A:: Autoscaling may not be effective for resource-intensive processing or handling long-term growth. Additionally, it incurs overhead and may not be cost-effective for predictable growth scenarios. The number of instances of a service also affects its effectiveness.
+Q:: What is autoscaling, and what does it aim to achieve?
+A:: Autoscaling enables the specification of conditions for scaling a web app out and in again based on resource usage, aiming to ensure sufficient resources during peak times while managing costs during lower demand periods.
+Q:: How does autoscaling help manage costs?
+A:: Autoscaling helps manage costs by dynamically adjusting resource allocation according to demand, preventing over-provisioning and unnecessary expenses.
+Q:: What is the significance of autoscaling in handling large volumes of requests?
+A:: Autoscaling ensures that a web app can handle large volumes of requests during peak times by dynamically allocating resources to meet the demand.
+Q:: What options does Azure provide for autoscaling?
+A:: Azure provides options for autoscaling based on metrics like disk queue length or HTTP requests, and also allows scaling according to a schedule.
+Q:: Explain how autoscaling based on a metric works.
+A:: Autoscaling based on a metric involves defining autoscale rules that specify a metric to monitor and how autoscaling should respond when the metric crosses a defined threshold.
+Q:: What are the available metrics for autoscale rules in a web app?
+A:: Available metrics for autoscale rules in a web app include CPU Percentage, Memory Percentage, Disk Queue Length, HTTP Queue Length, Data In, and Data Out.
+Q:: How does autoscaling analyze metrics over time?
+A:: Autoscaling analyzes trends in metric values across all instances over time by aggregating values retrieved for a metric over a period known as the time grain, and further aggregating these values over a longer user-specified period called the Duration.
+Q:: Describe autoscale actions and their purposes.
+A:: Autoscale actions include scale-out (increasing instance count) and scale-in (reducing instance count), triggered by a metric crossing a threshold, and they help maintain the desired performance level of the web app.
+Q:: What is the purpose of the cooldown period in autoscale actions?
+A:: The cooldown period in autoscale actions prevents rapid triggering of scale events, allowing the system to stabilize between autoscale events by avoiding premature scaling decisions.
+Q:: Why is it recommended to plan for scaling-in when a workload decreases?
+A:: Planning for scaling-in when a workload decreases helps optimize resource usage and reduce costs during periods of lower demand.
+Q:: How can autoscale rules be paired effectively?
+A:: Autoscale rules can be paired effectively by defining both scale-out and scale-in rules in the same autoscale condition, each triggered by different thresholds of the same metric.
+Q:: Can you describe how autoscale rules can be combined within an autoscale condition?
+A:: Autoscale rules within an autoscale condition can be combined by defining multiple rules for scale-out and scale-in actions, with each rule responding to different metrics or thresholds, ensuring flexibility and efficiency in scaling operations.
+Q:: What are the prerequisites for enabling autoscaling in App Service?
+A:: Not all pricing tiers support autoscaling. The development pricing tiers are either limited to a single instance or they only provide manual scaling. If you've selected one of these tiers, you must first scale up to the S1 or any of the P level production tiers.
+Q:: How do you navigate to enable autoscaling in Azure portal?
+A:: To get started with autoscaling, navigate to your App Service plan in the Azure portal and select Scale out (App Service plan) in the Settings group in the left navigation pane.
+Q:: What are the limitations regarding pricing tiers and autoscaling?
+A:: The development pricing tiers are either limited to a single instance (the F1 and D1 tiers), or they only provide manual scaling (the B1 tier).
+Q:: What happens when you select "Custom autoscale" in the App Service Plan settings?
+A:: Selecting Custom autoscale reveals condition groups you can use to manage your scale settings.
+Q:: What can you do once autoscaling is enabled?
+A:: Once autoscaling is enabled, you can edit the automatically created default scale condition, and you can add your own custom scale conditions.
+Q:: What is the purpose of the default scale condition in autoscaling?
+A:: The Default scale condition is executed when none of the other scale conditions are active.
+Q:: How can you create custom scale conditions in autoscaling?
+A:: Once autoscaling is enabled, you can add your own custom scale conditions.
+Q:: Describe the options available for metric-based scale conditions.
+A:: A metric-based scale condition can specify the minimum and maximum number of instances to create. The maximum number can't exceed the limits defined by the pricing tier. Additionally, all scale conditions other than the default may include a schedule indicating when the condition should be applied.
+Q:: What are scale rules in autoscaling?
+A:: A metric-based scale condition contains one or more scale rules. You use the Add a rule link to add your own custom rules. You define the criteria that indicate when a rule should trigger an autoscale action, and the autoscale action to be performed (scale out or scale in) using the metrics, aggregations, operators, and thresholds described earlier.
+Q:: How do you monitor autoscaling activity in the Azure portal?
+A:: The Azure portal enables you to track when autoscaling has occurred through the Run history chart.
+Q:: What information does the "Run history" chart provide?
+A:: The Run history chart shows how the number of instances varies over time, and which autoscale conditions caused each change.
+Q:: How can you correlate autoscaling events with resource utilization in App Service?
+A:: You can use the Run history chart with the metrics shown on the Overview page to correlate the autoscaling events with resource utilization.
+Q:: What are the key components of an autoscale setting?
+A:: The key components of an autoscale setting include maximum, minimum, and default values of instances, along with associated metrics to scale by.
+Q:: Explain the purpose of an autoscale job.
+A:: An autoscale job reads the associated metric to scale by and checks if it has crossed the configured threshold for scale-out or scale-in.
+Q:: How are thresholds calculated in autoscale settings? Provide an example.
+A:: Thresholds in autoscale settings are calculated at an instance level. For example, "scale out by one instance when average CPU > 80% when instance count is 2" means to scale out when the average CPU across all instances is greater than 80%.
+Q:: Why is it important to ensure a difference between the maximum and minimum values in autoscale settings?
+A:: Ensuring a difference between the maximum and minimum values prevents situations where no scale action can occur, providing flexibility for autoscale to function effectively.
+Q:: Describe the significance of choosing appropriate statistics for diagnostics metrics in autoscale settings.
+A:: Choosing appropriate statistics for diagnostics metrics, such as Average, Minimum, Maximum, or Total, ensures accurate scaling decisions based on the nature of the metric being monitored.
+Q:: What are the recommended practices for choosing thresholds for scale-out and scale-in in autoscale settings?
+A:: Recommended practices include selecting different thresholds for scale-out and scale-in to prevent situations like "flapping" and ensuring an adequate margin between the thresholds.
+Q:: Explain the concept of "flapping" in autoscale settings and how it can be avoided.
+A:: "Flapping" refers to situations where scale-in and scale-out actions continually oscillate. It can be avoided by selecting thresholds carefully and ensuring a margin between scale-out and scale-in thresholds.
+Q:: Provide an example of a recommended rule combination for autoscale settings and explain its functioning.
+A:: An example of a recommended rule combination is to increase instances by 1 count when CPU% >= 80 and decrease instances by 1 count when CPU% <= 60. This rule combination allows for effective scaling while avoiding "flapping" situations.
+Q:: What considerations should be taken into account when multiple rules are configured in an autoscale profile?
+A:: When multiple rules are configured, autoscale runs if any rule is met for scale-out, while for scale-in, autoscale requires all rules to be met.
+Q:: Why is selecting a safe default instance count crucial in autoscale settings?
+A:: Selecting a safe default instance count ensures that the service can scale appropriately when metrics aren't available, providing stability to the autoscale process.
+Q:: What conditions trigger autoscale notifications according to the text?
+A:: Autoscale notifications are triggered when autoscale issues a scale operation, successfully completes a scale action, fails to take a scale action, metrics aren't available for scale decisions, or metrics become available again.
+Q:: How can one monitor the health of the autoscale engine based on the provided text?
+A:: One can monitor the health of the autoscale engine by using Activity Log alerts and configuring email or webhook notifications for successful scale actions via the notifications tab on the autoscale setting.
+
 #### Chapter 4 - Explore Azure App Service deployment slots
 
 ### Part II - Implement Azure Functions
