@@ -1657,6 +1657,165 @@ A:: In serverless mode, you don't have to provision any throughput upfront. Inst
 
 #### Chapter 2 - Work with Azure Cosmos DB
 
+Q:: What are the key terms used in Azure Cosmos DB .NET SDK v3 for API for NoSQL?
+A:: The key terms used in Azure Cosmos DB .NET SDK v3 for API for NoSQL are "container" and "item".
+
+Q:: Where can you find the latest .NET sample solutions for Azure Cosmos DB?
+A:: The latest .NET sample solutions for Azure Cosmos DB can be found in the [azure-cosmos-dotnet-v3](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/master/Microsoft.Azure.Cosmos.Samples/Usage) GitHub repository.
+
+Q:: What are the generic terms used in version 3 of the .NET SDK for Azure Cosmos DB?
+A:: The generic terms used in version 3 of the .NET SDK for Azure Cosmos DB are "container" and "item".
+
+Q:: How does one create a `CosmosClient` in the .NET SDK v3 for Azure Cosmos DB?
+A:: To create a `CosmosClient` in the .NET SDK v3 for Azure Cosmos DB, you use the constructor `CosmosClient(endpoint, key)`.
+
+Q:: How does the `CosmosClient` handle connections in an application?
+A:: The `CosmosClient` is thread-safe, and it's recommended to maintain a single instance of `CosmosClient` per the lifetime of the application to enable efficient connection management and performance.
+
+Q:: How does one create a database if it doesn't exist using the .NET SDK v3?
+A:: To create a database if it doesn't exist using the .NET SDK v3, one can use the `CosmosClient.CreateDatabaseIfNotExistsAsync` method.
+
+Q:: What is the purpose of the `ReadAsync` method in reading a database?
+A:: The purpose of the `ReadAsync` method in reading a database is to read a database from the Azure Cosmos DB service as an asynchronous operation.
+
+Q:: How is a container created if it doesn't exist in the .NET SDK v3 for Azure Cosmos DB?
+A:: In the .NET SDK v3 for Azure Cosmos DB, a container is created if it doesn't exist using the `Database.CreateContainerIfNotExistsAsync` method.
+
+Q:: What is the purpose of the `ReadContainerAsync` method in container operations?
+A:: The purpose of the `ReadContainerAsync` method in container operations is to read container properties asynchronously.
+
+Q:: How can you delete a container asynchronously in the .NET SDK v3?
+A:: You can delete a container asynchronously in the .NET SDK v3 by using the `DeleteContainerAsync` method.
+
+Q:: What is the requirement for creating an item in Azure Cosmos DB using the .NET SDK v3?
+A:: The requirement for creating an item in Azure Cosmos DB using the .NET SDK v3 is that the item must be a JSON serializable object containing an `id` property and a `partitionKey`.
+
+Q:: How is an item read asynchronously using the .NET SDK v3?
+A:: An item is read asynchronously using the .NET SDK v3 by using the `Container.ReadItemAsync` method.
+
+Q:: How does one query an item using a SQL statement in the .NET SDK v3 for Azure Cosmos DB?
+A:: One queries an item using a SQL statement in the .NET SDK v3 for Azure Cosmos DB by using the `Container.GetItemQueryIterator` method.
+
+Q:: What resources are available in the [azure-cosmos-dotnet-v3](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/master/Microsoft.Azure.Cosmos.Samples/Usage) GitHub repository?
+A:: The [azure-cosmos-dotnet-v3](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/master/Microsoft.Azure.Cosmos.Samples/Usage) GitHub repository includes the latest .NET sample solutions to perform CRUD and other common operations on Azure Cosmos DB resources.
+
+Q:: Where can you find direct links to specific examples of Azure Cosmos DB.NET V3 SDK for the SQL API?
+A:: Direct links to specific examples of Azure Cosmos DB.NET V3 SDK for the SQL API can be found in the article [Azure Cosmos DB.NET V3 SDK (Microsoft.Azure.Cosmos) examples for the SQL API](https://learn.microsoft.com/en-us/azure/cosmos-db/sql-api-dotnet-v3sdk-samples).
+
+Q:: What types of operations can stored procedures perform inside an Azure Cosmos container?
+A:: Stored procedures inside an Azure Cosmos container can create, update, read, query, and delete items.
+
+Q:: How do you register stored procedures, triggers, and user-defined functions in Azure Cosmos DB?
+A:: To call stored procedures, triggers, or user-defined functions in Azure Cosmos DB, you need to register them.
+
+Q:: Explain the purpose of the `context` and `response` objects in a stored procedure.
+A:: The `context` object provides access to all operations that can be performed in Azure Cosmos DB, while the `response` object is used to set the body of the response to be sent back to the client.
+
+Q:: What is the primary function of the `createDocumentStoredProc` stored procedure?
+A:: The primary function of the `createDocumentStoredProc` stored procedure is to create a document in the current collection of Azure Cosmos DB.
+
+Q:: How does Azure Cosmos DB handle input parameters for stored procedures defined in the Azure portal?
+A:: Azure Cosmos DB handles input parameters for stored procedures as strings, even if passed as arrays, which are converted to strings before being sent.
+
+Q:: What workaround can you employ to handle array input parameters in stored procedures?
+A:: To handle array input parameters in stored procedures, you can define a function within the stored procedure to parse the string input parameter as an array.
+
+Q:: Describe the concept of bounded execution in Azure Cosmos DB stored procedures.
+A:: Bounded execution in Azure Cosmos DB stored procedures refers to the requirement that all operations must complete within a limited amount of time.
+
+Q:: How can you implement transactions on items within a container using stored procedures?
+A:: You can implement transactions on items within a container using stored procedures by using JavaScript functions to implement a continuation-based model.
+
+Q:: What is the purpose of the continuation value in the transaction continuation model?
+A:: The continuation value in the transaction continuation model allows applications to resume a transaction from a new starting point.
+
+Q:: What does the diagram illustrate regarding the transaction continuation model in stored procedures?
+A:: The diagram illustrates how the transaction continuation model can be used to repeat a server-side function until it finishes its entire processing workload.
+
+Q:: What are pretriggers and post-triggers in Azure Cosmos DB?
+A:: Pretriggers and post-triggers are mechanisms supported by Azure Cosmos DB for executing code before and after modifying a database item, respectively.
+
+Q:: How are triggers executed in Azure Cosmos DB?
+A:: Triggers in Azure Cosmos DB are not automatically executed; they must be specified for each database operation where their execution is desired.
+
+Q:: What is the purpose of a pretrigger in Azure Cosmos DB?
+A:: The purpose of a pretrigger in Azure Cosmos DB is to perform actions or validations before modifying a database item.
+
+Q:: Explain the process of validating properties using a pretrigger.
+A:: In a pretrigger, properties of an Azure Cosmos item can be validated before creation or modification. For instance, a pretrigger might add a timestamp property to an item if it doesn't already contain one.
+
+Q:: Can pretriggers have input parameters?
+A:: No, pretriggers in Azure Cosmos DB cannot have input parameters.
+
+Q:: How is the request object utilized in pretriggers?
+A:: In pretriggers, the request object is used to manipulate the request message associated with the operation, such as accessing or modifying the item to be created or modified.
+
+Q:: What is the significance of specifying the `TriggerOperation` value when creating triggers?
+A:: Specifying the `TriggerOperation` value when creating triggers determines the operations for which the trigger can be executed. For instance, a trigger created with `TriggerOperation.Create` can only be invoked during item creation operations.
+
+Q:: Describe the functionality of a post-trigger in Azure Cosmos DB.
+A:: A post-trigger in Azure Cosmos DB executes code after modifying a database item. It is often used to perform additional actions or updates based on the changes made to the item.
+
+Q:: How does transactional execution work for post-triggers in Azure Cosmos DB?
+A:: In Azure Cosmos DB, post-triggers execute as part of the same transaction for the underlying item itself. If an exception occurs during the post-trigger execution, the entire transaction fails, and any changes made are rolled back.
+
+Q:: What is the purpose of user-defined functions (UDFs) in Azure Cosmos DB?
+A:: User-defined functions (UDFs) in Azure Cosmos DB enable the definition of custom logic that can be executed as part of queries to perform calculations, validations, or transformations on data.
+
+Q:: Provide an example of a user-defined function used to calculate income tax for different income brackets.
+A:: A user-defined function might calculate income tax based on various income brackets. For example, it may apply different tax rates for incomes below $1000, between $1000 and $10000, and above $10000.
+
+Q:: How are UDFs incorporated into queries in Azure Cosmos DB?
+A:: UDFs are incorporated into queries in Azure Cosmos DB by calling the function within the query to perform calculations or transformations on the queried data.
+
+Q:: Explain the structure of a UDF for calculating income tax.
+A:: A UDF for calculating income tax typically takes the income amount as input and applies different tax rates based on predefined brackets to compute the tax amount.
+
+Q:: What happens if no input is provided to the UDF for income calculation?
+A:: If no input is provided to the UDF for income calculation, the function might throw an error or return a default value, depending on its implementation.
+
+Q:: What are the different income brackets considered in the provided UDF?
+A:: The provided UDF considers different income brackets, applying different tax rates for incomes below $1000, between $1000 and $10000, and above $10000.
+
+Q:: What is the change feed in Azure Cosmos DB, and how does it function?
+A:: The change feed in Azure Cosmos DB is a persistent record of changes to a container in the order they occur. It works by listening to an Azure Cosmos DB container for any changes and outputs the sorted list of documents that were changed in the order they were modified.
+
+Q:: What types of operations are currently supported by the change feed in Azure Cosmos DB?
+A:: Currently, the change feed in Azure Cosmos DB supports inserts and updates. However, it does not log delete operations.
+
+Q:: How can you handle delete operations in the change feed since they are not directly supported?
+A:: To handle delete operations in the change feed, you can add a soft marker on the items that are being deleted. For instance, you can add an attribute in the item called "deleted," set its value to "true," and then set a time-to-live (TTL) value on the item, ensuring it is automatically deleted.
+
+Q:: Explain the two models for working with the Azure Cosmos DB change feed: push model and pull model.
+A:: The two models for working with the Azure Cosmos DB change feed are the push model and the pull model. In the push model, the change feed processor pushes work to a client that has business logic for processing it. In the pull model, the client has to pull the work from the server.
+
+Q:: Why is it recommended to use the push model over the pull model when working with the Azure Cosmos DB change feed?
+A:: It is recommended to use the push model because it eliminates the need for polling the change feed for future changes, storing state for the last processed change, and offers other benefits.
+
+Q:: What are some scenarios where you might prefer using the pull model instead of the push model?
+A:: Some scenarios where you might prefer using the pull model include reading changes from a particular partition key, controlling the pace at which your client receives changes for processing, and doing a one-time read of the existing data in the change feed.
+
+Q:: Describe how Azure Functions and the change feed processor library enable reading from the change feed using a push model.
+A:: Azure Functions and the change feed processor library enable reading from the change feed using a push model by automatically triggering Azure Functions or utilizing the change feed processor library behind the scenes to process changes asynchronously.
+
+Q:: How does Azure Functions utilize the change feed processor, and what benefits does it offer?
+A:: Azure Functions utilizes the change feed processor by acting as a hosting platform for it. It automatically parallelizes change processing across container partitions, offering scaling and reliable event detection functionality without the need to maintain any worker infrastructure.
+
+Q:: What are the main components involved in implementing the change feed processor?
+A:: The main components involved in implementing the change feed processor include the monitored container, the lease container, the compute instance, and the delegate.
+
+Q:: Can you explain the purpose of the lease container in the context of the change feed processor?
+A:: The lease container acts as a state storage and coordinates the processing of the change feed across multiple workers. It stores lease information to ensure each worker processes changes independently and efficiently.
+
+Q:: Walk through the process of starting the change feed processor and handling changes asynchronously.
+A:: To start the change feed processor, you first initialize it with necessary configurations, including the monitored container and the lease container. Then, you define a delegate to handle changes asynchronously. Finally, you start the processor instance, which listens for changes, sends them to the delegate, and updates the lease store with the latest processed point in time.
+
+Q:: What is the significance of the instance name when implementing the change feed processor?
+A:: The instance name in implementing the change feed processor serves as a unique identifier for the compute instance. It ensures that each instance processes changes independently and maintains its state.
+
+Q:: What is the typical life cycle of a host instance when using the change feed processor?
+A:: The typical life cycle of a host instance when using the change feed processor involves reading the change feed, sleeping if there are no changes, processing changes, updating the lease store with the latest processed point in time, and repeating the process.
+
 ### Part V - Implement containerized solutions
 
 #### Chapter 1 - Manage container images in Azure Container Registry
