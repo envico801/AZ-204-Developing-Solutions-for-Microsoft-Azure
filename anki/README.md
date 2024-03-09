@@ -198,21 +198,21 @@ Q:: What principles are followed when adding or editing connection strings?
 A:: Adding and editing connection strings follow the same principles as other app settings, and they can also be tied to deployment slots.
 
 Q:: Provide an example of connection strings in JSON formatting used for bulk adding or editing.
-A:: ```
+A:: 
+```json
 [
-{
-"name": "name-1",
-"value": "conn-string-1",
-"type": "SQLServer",
-"slotSetting": false
-},
-{
-"name": "name-2",
-"value": "conn-string-2",
-"type": "PostgreSQL",
-"slotSetting": false
-},
-...
+  {
+    "name": "name-1",
+    "value": "conn-string-1",
+    "type": "SQLServer",
+    "slotSetting": false
+  },
+  {
+    "name": "name-2",
+    "value": "conn-string-2",
+    "type": "PostgreSQL",
+    "slotSetting": false
+  }
 ]
 ```
 
@@ -522,6 +522,7 @@ A:: Deployment slots in Azure App Service are live apps with their own host name
 
 Q:: What benefits are associated with deploying an application to a non-production slot before swapping it with the production slot?
 A:: Deploying an application to a non-production slot offers several benefits:
+
 1. It allows you to validate app changes in a staging deployment slot before swapping them with the production slot.
 2. Deploying to a slot first ensures that all instances of the slot are warmed up before being swapped into production, eliminating downtime.
 3. Traffic redirection during swap operations is seamless, and no requests are dropped.
