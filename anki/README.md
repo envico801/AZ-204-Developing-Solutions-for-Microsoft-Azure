@@ -357,6 +357,86 @@ A:: One can monitor the health of the autoscale engine by using Activity Log ale
 
 #### Chapter 4 - Explore Azure App Service deployment slots
 
+Q:: What are deployment slots in Azure App Service, and how do they function in different tiers?
+A:: Deployment slots in Azure App Service are live apps with their own host names, allowing you to deploy your web app, web app on Linux, mobile back end, or API app. They function differently depending on the tier of your App Service plan. Specifically, they are available in the Standard, Premium, or Isolated tiers.
+Q:: What benefits are associated with deploying an application to a non-production slot before swapping it with the production slot?
+A:: Deploying an application to a non-production slot offers several benefits:
+1. It allows you to validate app changes in a staging deployment slot before swapping them with the production slot.
+2. Deploying to a slot first ensures that all instances of the slot are warmed up before being swapped into production, eliminating downtime.
+3. Traffic redirection during swap operations is seamless, and no requests are dropped.
+Q:: How does deploying to a staging deployment slot help in validating app changes?
+A:: Deploying to a staging deployment slot enables you to validate app changes before swapping them with the production slot. This ensures that potential issues are identified and resolved before impacting the live production environment.
+Q:: Explain the process of swapping deployment slots in Azure App Service.
+A:: The process of swapping deployment slots involves swapping the content and configuration elements between two deployment slots, including the production slot. This allows you to seamlessly transition changes from a staging slot to the production slot without causing downtime or dropping requests.
+Q:: Why is warming up instances of the slot important before swapping it into production?
+A:: Warming up instances of the slot before swapping them into production ensures that the application is ready to handle incoming traffic. This helps to prevent performance issues or downtime that may occur if the instances are not warmed up.
+Q:: How does Azure App Service handle traffic redirection during swap operations?
+A:: Azure App Service handles traffic redirection during swap operations seamlessly, ensuring that no requests are dropped and that the transition between slots is smooth. This allows for uninterrupted service for users accessing the application.
+Q:: What is the significance of having the "last known good site" when performing a swap in Azure App Service?
+A:: Having the "last known good site" allows you to revert to the previous production app if the changes swapped into the production slot are not as expected. This provides a safety net in case issues arise during the swap process.
+Q:: Is there any additional charge for using deployment slots in Azure App Service?
+A:: No, there is no extra charge for using deployment slots in Azure App Service. They are included as part of the features offered within the Standard, Premium, or Isolated tiers.
+Q:: How can you automate the workflow of swapping deployment slots in Azure App Service?
+A:: You can automate the workflow of swapping deployment slots by configuring auto swap. Auto swap automatically swaps the staging slot with the production slot without the need for manual intervention, streamlining the deployment process.
+Q:: What limitations should you consider when scaling your app to a different tier in Azure App Service?
+A:: When scaling your app to a different tier in Azure App Service, you should consider the limitations regarding the number of deployment slots supported by each tier. For example, if your app has more than five slots, you cannot scale it down to the Standard tier, as the Standard tier supports only five deployment slots.
+Q:: What precautions does App Service take to prevent downtime during slot swapping?
+A:: App Service ensures that the target slot doesn't experience downtime during slot swapping by applying the target slot's settings to all instances of the source slot, triggering restarts if necessary, and initializing local cache and application initiation.
+Q:: How does App Service handle settings during slot swapping, particularly in the case of slot-specific app settings and connection strings?
+A:: During slot swapping, App Service applies slot-specific app settings and connection strings from the target slot to all instances of the source slot, triggering restarts as needed to ensure synchronization.
+Q:: During a swap with preview, what actions occur after applying the target slot's settings to all instances of the source slot?
+A:: After applying the target slot's settings to all instances of the source slot during a swap with preview, the first phase ends, allowing validation of the source slot with the target slot's settings.
+Q:: What happens if any instance fails to restart during the slot swapping process?
+A:: If any instance fails to restart during the slot swapping process, the swap operation reverts all changes to the source slot and halts the operation.
+Q:: Describe the role of local cache initialization in the slot swapping procedure.
+A:: Local cache initialization triggers restarts on each instance of the source slot and is performed by making an HTTP request to the application root ("/") on each instance.
+Q:: How does App Service handle Application Initiation during slot swapping when auto swap is enabled with custom warm-up?
+A:: App Service triggers Application Initiation by making HTTP requests to the application root ("/") on each instance of the source slot, marking instances as warmed up if they return any HTTP response.
+Q:: What determines if a slot is considered "warmed up" during the slot swapping process?
+A:: During slot swapping, a slot is considered "warmed up" if all instances on the source slot respond successfully to the Application Initiation requests.
+Q:: Explain the significance of the routing rules switching during the slot swapping operation.
+A:: Switching routing rules during slot swapping directs traffic from the source slot to the target slot, ensuring a seamless transition of apps without downtime.
+Q:: How does the configuration differ between swapped and unswapped settings in App Service?
+A:: Swapped settings, such as general settings, app settings, and connection strings, are synchronized between slots, while unswapped settings, like custom domain names and non-public certificates, remain specific to their respective slots.
+Q:: What measures can be taken to ensure certain settings stick to a specific slot and are not affected by slot swapping?
+A:: To ensure certain settings stick to a specific slot, the `WEBSITE_OVERRIDE_PRESERVE_DEFAULT_STICKY_SLOT_SETTINGS` app setting must be added to every slot of the app and set to `0` or `false`.
+Q:: How does the presence of the `WEBSITE_OVERRIDE_PRESERVE_DEFAULT_STICKY_SLOT_SETTINGS` app setting affect the swappability of settings in App Service?
+A:: The presence of the `WEBSITE_OVERRIDE_PRESERVE_DEFAULT_STICKY_SLOT_SETTINGS` app setting determines whether settings are swappable or not in App Service, affecting the synchronization behavior during slot swapping.
+Q:: What options are available to configure app settings or connection strings to stick to a specific slot and not be affected by swapping?
+A:: To configure app settings or connection strings to stick to a specific slot, settings should be edited in the Configuration page for that slot, with the "Deployment slot setting" checkbox selected to indicate that the setting isn't swappable.
+Q:: What is the purpose of swapping deployment slots?
+A:: Swapping deployment slots allows you to move an application from one slot to another, such as from a staging environment to production, with minimal downtime and risk.
+Q:: How can you manually swap deployment slots?
+A:: To manually swap deployment slots, you need to go to your app's **Deployment slots** page, select **Swap**, choose the desired **Source** and **Target** slots, verify configuration changes, and then initiate the swap.
+Q:: What is the advantage of performing a swap with preview?
+A:: Performing a swap with preview allows you to validate how your application runs with the swapped settings before completing the swap. It also warms up the source slot, which is beneficial for mission-critical applications.
+Q:: How do you configure auto swap?
+A:: To configure auto swap, you need to go to your app's resource page, select the deployment slot you want to configure, turn on **Auto swap enabled**, choose the target slot for auto swap deployment, and save the settings.
+Q:: What action should you take if errors occur in the target slot after a slot swap?
+A:: If errors occur in the target slot after a slot swap, you should immediately swap the same two slots again to restore them to their pre-swap states.
+Q:: How can you monitor a swap operation?
+A:: To monitor a swap operation, you can access the activity log on your app's resource page in the portal and look for the `Swap Web App Slots` operation. You can expand it to view suboperations or errors for more details.
+Q:: What is the default behavior for client requests to an app's production URL in App Service?
+A:: By default, all client requests to the app's production URL (`http://<app_name>.azurewebsites.net`) are routed to the production slot.
+Q:: Why might you want to route a portion of the traffic to another slot in App Service?
+A:: This feature is useful if you need user feedback for a new update, but you're not ready to release it to production.
+Q:: How can you route production traffic automatically in App Service?
+A:: To route production traffic automatically, go to your app's resource page, select **Deployment slots**, and in the **Traffic %** column of the slot you want to route to, specify a percentage (between 0 and 100) to represent the amount of total traffic you want to route. Then select **Save**.
+Q:: What does it mean when a client is "pinned" to a specific slot in App Service?
+A:: When a client is automatically routed to a specific slot, it's "pinned" to that slot for the life of that client session.
+Q:: How can you determine which slot a client session is pinned to in App Service?
+A:: You can determine which slot a client session is pinned to by looking at the `x-ms-routing-name` cookie in your HTTP headers.
+Q:: What is the purpose of routing production traffic manually in App Service?
+A:: The purpose of routing production traffic manually in App Service is to allow users to opt in to or opt out of a beta app.
+Q:: How can users opt out of a beta app in App Service using manual traffic routing?
+A:: Users can opt out of a beta app in App Service by accessing a link on your webpage that contains the query parameter `x-ms-routing-name=self`.
+Q:: How can users opt in to a beta app in App Service using manual traffic routing?
+A:: Users can opt in to a beta app in App Service by accessing a link that contains the query parameter `x-ms-routing-name` set to the name of the non-production slot.
+Q:: What happens when the `x-ms-routing-name` query parameter is set to `self` in App Service?
+A:: When the `x-ms-routing-name` query parameter is set to `self` in App Service, the client browser is redirected to the production slot.
+Q:: How can you access the staging slot manually in App Service, even if the routing percentage is set to 0?
+A:: By default, new slots are given a routing rule of `0%`. Users can access the staging slot manually by using the `x-ms-routing-name` query parameter, even if the routing percentage is set to 0.
+
 ### Part II - Implement Azure Functions
 
 #### Chapter 1 - Explore Azure Functions
