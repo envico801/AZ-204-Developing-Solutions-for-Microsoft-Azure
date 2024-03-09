@@ -765,6 +765,120 @@ A:: You can specify a lower maximum for the number of instances in an Azure Func
 
 #### Chapter 2 - Develop Azure Functions
 
+Q:: What are the essential components of a function in Azure Functions development?
+A:: A function in Azure Functions development consists of two crucial elements: code, which can be written in various languages, and configuration, specified in the _function.json_ file.
+
+Q:: Explain the role of the _function.json_ file in Azure Functions.
+A:: The _function.json_ file defines the function's trigger, bindings, and other configuration settings. It guides the runtime on how to monitor events and handle data during function execution.
+
+Q:: How is the _function.json_ file created for compiled languages versus scripting languages?
+A:: For compiled languages, the _function.json_ file is generated automatically from annotations in the code. However, for scripting languages, developers must provide the _function.json_ file themselves.
+
+Q:: Describe the contents and purpose of the `bindings` property in the _function.json_ file.
+A:: The `bindings` property in the _function.json_ file configures triggers and bindings. Each binding specifies settings such as type, direction, and name, determining data flow into and out of the function.
+
+Q:: What are the mandatory settings required for every binding in the _function.json_ file?
+A:: Every binding in the _function.json_ file requires settings for `type`, `direction`, and `name`.
+
+Q:: Define a function app in the context of Azure Functions development.
+A:: A function app provides an execution context in Azure for functions to run collectively. It serves as the unit of deployment and management, sharing pricing plans, deployment methods, and runtime versions across functions.
+
+Q:: What is the significance of a function app in managing functions?
+A:: Function apps allow for the collective management, deployment, and scaling of functions within Azure. All functions within a function app share common attributes like pricing plans and runtime versions.
+
+Q:: Explain the restriction related to the language used in Functions 2.x within a function app.
+A:: In Functions 2.x, all functions within a function app must be authored in the same language, unlike previous versions where language consistency was not required.
+
+Q:: What does the root project folder of a function app typically contain?
+A:: The root project folder of a function app typically contains a host configuration file (_host.json_) and a _bin_ folder containing necessary packages and library files.
+
+Q:: Where is the host configuration file (_host.json_) located within a function app?
+A:: The host configuration file (_host.json_) resides in the root folder of the function app.
+
+Q:: What purpose does the _bin_ folder serve in a function app?
+A:: The _bin_ folder in a function app contains packages and library files necessary for the function app's operation.
+
+Q:: How does the folder structure vary depending on the programming language used in Azure Functions?
+A:: The folder structure within a function app varies depending on the programming language being used, with specific guidelines provided for C#, F#, Java, JavaScript, and Python.
+
+Q:: What opportunities does local development environments provide for Azure Functions development?
+A:: Local development environments enable developers to use their preferred code editors and tools to create, test, and debug functions on their local computers, with the ability to connect to live Azure services.
+
+Q:: Can local functions interact with live Azure services during development?
+A:: Yes, local functions can connect to live Azure services during development, and developers can debug them using the full Functions runtime on their local computers.
+
+Q:: Why is it advised not to mix local development with portal development within the same function app?
+A:: It is advised not to mix local development with portal development within the same function app to maintain code consistency and avoid conflicts. Developing and publishing functions from a local project should not coincide with attempts to modify project code in the portal.
+
+Q:: What is the purpose of triggers in Azure Functions?
+A:: Triggers cause a function to run. They define how a function is invoked, and each function must have exactly one trigger.
+
+Q:: Describe the concept of bindings in Azure Functions.
+A:: Bindings in Azure Functions connect another resource to the function. They can be input bindings, output bindings, or both, and provide data to the function as parameters.
+
+Q:: How are triggers and bindings defined in C# class libraries?
+A:: Triggers and bindings in C# class libraries are defined by decorating methods and parameters with C# attributes.
+
+Q:: In JavaScript, how can you define the data type for input data in _function.json_?
+A:: In JavaScript, you can define the data type for input data in _function.json_ using the `dataType` property.
+
+Q:: What are the possible values for the `dataType` property in _function.json_ for JavaScript functions?
+A:: The possible values for the `dataType` property in _function.json_ for JavaScript functions include `binary`, `stream`, and `string`.
+
+Q:: Explain the concept of binding direction in Azure Functions.
+A:: Binding direction indicates whether a binding is used for input (`in`), output (`out`), or both. Triggers always have a direction of `in`, while input and output bindings use `in` and `out` respectively.
+
+Q:: How is the direction property specified for triggers and bindings in the _function.json_ file?
+A:: The direction property for triggers and bindings is specified in the _function.json_ file as part of the binding configuration.
+
+Q:: Provide an example scenario where Azure Table storage is updated based on a new message in Azure Queue storage.
+A:: An example scenario involves using an Azure Queue storage trigger and an Azure Table storage output binding to write a new row to Azure Table storage whenever a new message appears in Azure Queue storage.
+
+Q:: What elements are defined in the `bindings` array within the _function.json_ file for the Azure Table storage output binding?
+A:: The `bindings` array for the Azure Table storage output binding includes properties such as `type`, `direction`, `name`, `tableName`, and `connection`.
+
+Q:: How is the parameter that receives the queue message content identified in the C# script example?
+A:: In the C# script example, the parameter that receives the queue message content is identified by the name `order`, which corresponds to the `name` property value in _function.json_.
+
+Q:: In the JavaScript example, how is the partition key generated for the Azure Table storage output binding?
+A:: In the JavaScript example, the partition key is generated by calling the `generateRandomId()` function.
+
+Q:: How does a class library define triggers and bindings differently compared to other languages like JavaScript?
+A:: In a class library, triggers and bindings are defined using attributes instead of a _function.json_ file as in languages like JavaScript.
+
+Q:: Where can you find more detailed examples of triggers and bindings for Azure Functions?
+A:: More detailed examples of triggers and bindings for Azure Functions can be found in resources such as Azure Blob storage bindings, Azure Cosmos DB bindings, Timer triggers, and Azure Functions HTTP triggers and bindings documentation.
+
+Q:: How does a function project reference connection information?
+A:: The function project references connection information by name from its configuration provider. It doesn't directly accept the connection details, allowing them to be changed across environments.
+
+Q:: Explain how the default configuration provider handles environment variables.
+A:: The default configuration provider uses environment variables that are set in Application Settings when running in the Azure Functions service, or from the local settings file when developing locally.
+
+Q:: What is the alternative to setting the connection string directly in a `function.json` file?
+A:: Instead of setting the connection string directly in a `function.json` file, you would set `connection` to the name of an environment variable that contains the connection string.
+
+Q:: Describe the usage of identity-based connections in Azure Functions.
+A:: Some connections in Azure Functions are configured to use an identity instead of a secret. Support depends on the extension using the connection. Identity-based connections use a managed identity when hosted in the Azure Functions service.
+
+Q:: What is the limitation associated with identity-based connections in Durable Functions?
+A:: Identity-based connections are not supported with Durable Functions.
+
+Q:: How does Azure Functions service handle identity-based connections?
+A:: When hosted in the Azure Functions service, identity-based connections use a managed identity. The system-assigned identity is used by default, although a user-assigned identity can be specified with the `credential` and `clientID` properties.
+
+Q:: What options are available for specifying the identity in Azure Functions service?
+A:: The options available for specifying the identity in Azure Functions service include the system-assigned identity used by default, and the possibility of specifying a user-assigned identity with the `credential` and `clientID` properties.
+
+Q:: How can permissions be granted to the identity used in Azure Functions?
+A:: Permissions can be granted to the identity used in Azure Functions by assigning a role in Azure RBAC or specifying the identity in an access policy, depending on the service to which you're connecting.
+
+Q:: What principle should be followed when granting permissions to identities in Azure Functions?
+A:: When granting permissions to identities in Azure Functions, adhere to the principle of least privilege, granting the identity only required privileges.
+
+Q:: Mention some considerations regarding permissions granted to identities in Azure Functions.
+A:: Some permissions might be exposed by the target service that are not necessary for all contexts. Where possible, adhere to the principle of least privilege, granting the identity only required privileges.
+
 ### Part III - Develop solutions that use Blob storage
 
 #### Chapter 1 - Explore Azure Blob storage
