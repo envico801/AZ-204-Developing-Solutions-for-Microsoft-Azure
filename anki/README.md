@@ -1255,6 +1255,192 @@ A:: If there is a lifecycle management policy in effect for the storage account,
 
 #### Chapter 3 - Work with Azure Blob storage
 
+Q:: What is the recommended version of the Azure Storage client library for new applications?
+A:: Version 12.x is recommended for new applications.
+
+Q:: What are the basic classes provided by the Azure Storage client library?
+A:: The basic classes are: `BlobServiceClient`, `BlobContainerClient`, `BlobClient`, `AppendBlobClient`, and `BlockBlobClient`.
+
+Q:: What does the `BlobServiceClient` class represent, and what operations does it provide?
+A:: `BlobServiceClient` represents the storage account and provides operations to retrieve and configure account properties, and to work with blob containers in the storage account.
+
+Q:: Describe the functionality of the `BlobContainerClient` class.
+A:: `BlobContainerClient` represents a specific blob container and provides operations to work with the container and the blobs within it.
+
+Q:: Explain the purpose of the `BlobClient` class and its operations.
+A:: `BlobClient` represents a specific blob and provides general operations to work with the blob, including operations to upload, download, delete, and create snapshots.
+
+Q:: What is the role of the `AppendBlobClient` class, and what operations does it support?
+A:: `AppendBlobClient` represents an append blob and provides operations specific to append blobs, such as appending log data.
+
+Q:: How does the `BlockBlobClient` class differ from other blob types, and what operations does it offer?
+A:: `BlockBlobClient` represents a block blob and provides operations specific to block blobs, such as staging and then committing blocks of data.
+
+Q:: Which packages contain classes for working with Blob Storage data resources?
+A:: The packages are: `Azure.Storage.Blobs`, `Azure.Storage.Blobs.Specialized`, and `Azure.Storage.Blobs.Models`.
+
+Q:: What is the purpose of the `Azure.Storage.Blobs` package?
+A:: It contains the primary classes (client objects) for operating on the service, containers, and blobs.
+
+Q:: What does the `Azure.Storage.Blobs.Specialized` package offer?
+A:: It contains classes for performing operations specific to a blob type, such as block blobs.
+
+Q:: What types of classes are included in the `Azure.Storage.Blobs.Models` package?
+A:: `Azure.Storage.Blobs.Models` includes utility classes, structures, and enumeration types.
+
+Q:: What is the initial step in working with any Azure resource using the SDK?
+A:: Creating a client object.
+
+Q:: How do you create a client object to interact with Azure storage service resources?
+A:: By passing a URI referencing the endpoint to the client constructor.
+
+Q:: What are the three types of resources you can interact with in the storage service?
+A:: Storage accounts, containers, and blobs.
+
+Q:: How is the endpoint passed to the client constructor when creating a client object?
+A:: The endpoint can be constructed manually or queried for at runtime.
+
+Q:: What is the purpose of using [DefaultAzureCredential](https://learn.microsoft.com/en-us/dotnet/api/azure.identity.defaultazurecredential) in the code samples?
+A:: [DefaultAzureCredential](https://learn.microsoft.com/en-us/dotnet/api/azure.identity.defaultazurecredential) is used for authentication to Azure via a Microsoft Entra security principal.
+
+Q:: What does a `BlobServiceClient` object allow your application to do?
+A:: It allows interaction with resources at the storage account level.
+
+Q:: How do you create a `BlobServiceClient` object in C#?
+A:: By instantiating it with a URI and [DefaultAzureCredential](https://learn.microsoft.com/en-us/dotnet/api/azure.identity.defaultazurecredential).
+
+Q:: What functionalities does a `BlobContainerClient` object provide?
+A:: It allows interaction with a specific container resource, including methods to create, delete, or configure a container, and to list, upload, and delete blobs within it.
+
+Q:: How can you create a `BlobContainerClient` object in C#?
+A:: By either using a `BlobServiceClient` object or directly creating it with the container name appended to the URI.
+
+Q:: When might you choose to create a `BlobContainerClient` object directly without using `BlobServiceClient`?
+A:: When your work is narrowly scoped to a single container.
+
+Q:: What functionalities does a `BlobClient` object provide?
+A:: It allows interaction with a specific blob resource.
+
+Q:: How can you create a `BlobClient` object in C#?
+A:: By obtaining it from a service client or container client using the appropriate methods.
+
+Q:: What are system properties in Blob storage, and how are they managed in .NET?
+A:: System properties in Blob storage represent properties existing on each Blob storage resource. In .NET, the Azure Storage client library maintains these properties. Some system properties can be read or set, while others are read-only. Under the covers, certain system properties correspond to standard HTTP headers.
+
+Q:: Explain the concept of user-defined metadata in Blob storage and its relevance in .NET.
+A:: User-defined metadata in Blob storage consists of one or more name-value pairs specified for a Blob storage resource. In .NET, you can use metadata to store additional values with the resource. Metadata values are for your own purposes and do not affect how the resource behaves.
+
+Q:: How can you retrieve container properties using the `BlobContainerClient` class in .NET?
+A:: To retrieve container properties in .NET, you can call either the `GetProperties` or `GetPropertiesAsync` method of the `BlobContainerClient` class.
+
+Q:: Provide a code example demonstrating the retrieval of container properties asynchronously in .NET.
+A::
+```csharp
+private static async Task ReadContainerPropertiesAsync(BlobContainerClient container)
+{
+    try
+    {
+        // Fetch some container properties and write out their values.
+        var properties = await container.GetPropertiesAsync();
+        Console.WriteLine($"Properties for container {container.Uri}");
+        Console.WriteLine($"Public access level: {properties.Value.PublicAccess}");
+        Console.WriteLine($"Last modified time in UTC: {properties.Value.LastModified}");
+    }
+    catch (RequestFailedException e)
+    {
+        Console.WriteLine($"HTTP error code {e.Status}: {e.ErrorCode}");
+        Console.WriteLine(e.Message);
+        Console.ReadLine();
+    }
+}
+```
+
+Q:: How do you set metadata on a container in Blob storage using .NET?
+A:: To set metadata on a container in Blob storage using .NET, you add name-value pairs to an `IDictionary` object and then call either the `SetMetadata` or `SetMetadataAsync` method of the `BlobContainerClient` class to write the values.
+
+Q:: Explain the requirements for metadata names and values in Blob storage when using .NET.
+A:: Metadata names in Blob storage must conform to the naming conventions for C# identifiers. Names must be valid HTTP header names and valid C# identifiers, may contain only ASCII characters, and should be treated as case-insensitive. Metadata values containing non-ASCII characters should be Base64-encoded or URL-encoded.
+
+Q:: Describe the behavior of Blob storage when multiple metadata headers with the same name are submitted for a resource.
+A:: Blob storage comma-separates and concatenates the values of metadata headers with the same name if two or more headers with the same name are submitted for a resource. The HTTP response code returned is `200 (OK)`.
+
+Q:: What methods are used to retrieve metadata along with properties from a container in .NET?
+A:: In .NET, the `GetProperties` and `GetPropertiesAsync` methods are used to retrieve metadata along with properties from a container.
+
+Q:: Provide a code example illustrating the retrieval of metadata from a container asynchronously in .NET.
+A::
+```csharp
+public static async Task ReadContainerMetadataAsync(BlobContainerClient container)
+{
+    try
+    {
+        var properties = await container.GetPropertiesAsync();
+
+        // Enumerate the container's metadata.
+        Console.WriteLine("Container metadata:");
+        foreach (var metadataItem in properties.Value.Metadata)
+        {
+            Console.WriteLine($"\tKey: {metadataItem.Key}");
+            Console.WriteLine($"\tValue: {metadataItem.Value}");
+        }
+    }
+    catch (RequestFailedException e)
+    {
+        Console.WriteLine($"HTTP error code {e.Status}: {e.ErrorCode}");
+        Console.WriteLine(e.Message);
+        Console.ReadLine();
+    }
+}
+```
+
+Q:: Discuss the importance of error handling when working with container properties and metadata in .NET, including handling `RequestFailedException`.
+A:: Error handling is crucial when working with container properties and metadata in .NET. The `RequestFailedException` class helps capture exceptions that may occur during operations like fetching properties or metadata. Proper error handling ensures graceful degradation of application behavior and enhances overall reliability and resilience.
+
+Q:: What are metadata headers in the context of containers and blobs?
+A:: Metadata headers in the context of containers and blobs are custom metadata represented as HTTP headers.
+
+Q:: Describe the format for metadata headers.
+A:: Metadata headers are represented as name/value pairs in the format: x-ms-meta-name:string-value.
+
+Q:: What rules must metadata names adhere to, starting from version 2009-09-19?
+A:: Starting from version 2009-09-19, metadata names must adhere to the naming rules for C# identifiers.
+
+Q:: Explain the case sensitivity of metadata names.
+A:: Metadata names are case-insensitive when set or read, although they preserve the case with which they were created.
+
+Q:: What happens if multiple metadata headers with the same name are submitted for a resource?
+A:: If multiple metadata headers with the same name are submitted for a resource, the Blob service returns status code 400 (Bad Request).
+
+Q:: What is the maximum size limit for all metadata pairs?
+A:: The total size of all metadata pairs can be up to 8KB in size.
+
+Q:: How are metadata name/value pairs treated in terms of HTTP headers?
+A:: Metadata name/value pairs are treated as valid HTTP headers and adhere to all restrictions governing HTTP headers.
+
+Q:: What operations can be performed on metadata for blob or container resources?
+A:: Metadata for blob or container resources can be retrieved or set directly, without altering the content of the resource.
+
+Q:: What is the difference between the GET and HEAD operations concerning metadata retrieval?
+A:: Both GET and HEAD operations retrieve metadata headers for the specified container or blob. However, they do not return a response body.
+
+Q:: What URI syntax is used to retrieve metadata headers for a container?
+A:: The URI syntax for retrieving metadata headers on a container is: GET/HEAD https://myaccount.blob.core.windows.net/mycontainer?restype=container.
+
+Q:: Explain how metadata headers are set using the PUT operation.
+A:: The PUT operation sets metadata headers on the specified container or blob, overwriting any existing metadata on the resource.
+
+Q:: What happens when the PUT operation is called without any headers on the request?
+A:: Calling PUT without any headers on the request clears all existing metadata on the resource.
+
+Q:: What are the standard HTTP properties supported on containers?
+A:: The standard HTTP properties supported on containers include: ETag and Last-Modified.
+
+Q:: List the standard HTTP headers supported on blobs.
+A:: The standard HTTP headers supported on blobs include: ETag, Last-Modified, Content-Length, Content-Type, Content-MD5, Content-Encoding, Content-Language, Cache-Control, Origin, and Range.
+
+Q:: Differentiate between metadata headers and property headers in terms of naming conventions.
+A:: Metadata headers are named with the prefix x-ms-meta- and a custom name, while property headers use standard HTTP header names specified in the HTTP/1.1 protocol specification.
+
 ### Part IV - Develop solutions that use Azure Cosmos DB
 
 #### Chapter 1 - Explore Azure Cosmos DB
