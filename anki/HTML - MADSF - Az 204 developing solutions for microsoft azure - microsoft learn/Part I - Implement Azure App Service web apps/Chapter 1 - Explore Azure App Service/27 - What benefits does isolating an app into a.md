@@ -1,13 +1,13 @@
 ==================== Question ====================  
 
-### What components does an App Service plan define?  
+### What benefits does isolating an app into a separate App Service plan offer?  
 
 ==================== Answer ====================  
 
-An App Service plan defines the operating system, region, number of VM instances, size of VM instances, and pricing tier for the apps running within it.
+It provides better performance and control over resources.
 
 ==================== Id ====================  
-19
+27
 
 ---
 
@@ -15,7 +15,7 @@ DECK INFO
 
 TARGET DECK: EXAMPLE::EXAMPLE::MADSF - Az 204 developing solutions for microsoft azure - microsoft learn::Part I - Implement Azure App Service web apps::Chapter 1 - Explore Azure App Service
 
-FILE TAGS: #EXAMPLE::#EXAMPLE::#MADSF-Az-204-developing-solutions-for-microsoft-azure-microsoft-learn::#Part-I-Implement-Azure-App-Service-web-apps::#Chapter-1-Explore-Azure-App-Service::#19-What-components-does-an-app-service-plan-d
+FILE TAGS: #EXAMPLE::#EXAMPLE::#MADSF-Az-204-developing-solutions-for-microsoft-azure-microsoft-learn::#Part-I-Implement-Azure-App-Service-web-apps::#Chapter-1-Explore-Azure-App-Service::#27-What-benefits-does-isolating-an-app-into-a
 
 Tags:
 

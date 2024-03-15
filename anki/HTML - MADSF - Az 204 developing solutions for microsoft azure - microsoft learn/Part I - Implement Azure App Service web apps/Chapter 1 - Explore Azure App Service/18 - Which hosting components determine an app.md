@@ -1,13 +1,13 @@
 ==================== Question ====================  
 
-### Under what circumstances should you consider isolating your app into a new App Service plan?  
+### Which hosting components determine an App Service plan?  
 
 ==================== Answer ====================  
 
-When the app's resource demands are high, when it requires independent scaling, or when it needs resources in a different geographical region.
+An App Service plan determines the operating system, region, number and size of VM instances, and pricing tier.
 
 ==================== Id ====================  
-30
+18
 
 ---
 
@@ -15,7 +15,7 @@ DECK INFO
 
 TARGET DECK: EXAMPLE::EXAMPLE::MADSF - Az 204 developing solutions for microsoft azure - microsoft learn::Part I - Implement Azure App Service web apps::Chapter 1 - Explore Azure App Service
 
-FILE TAGS: #EXAMPLE::#EXAMPLE::#MADSF-Az-204-developing-solutions-for-microsoft-azure-microsoft-learn::#Part-I-Implement-Azure-App-Service-web-apps::#Chapter-1-Explore-Azure-App-Service::#30-Under-what-circumstances-should-you-consid
+FILE TAGS: #EXAMPLE::#EXAMPLE::#MADSF-Az-204-developing-solutions-for-microsoft-azure-microsoft-learn::#Part-I-Implement-Azure-App-Service-web-apps::#Chapter-1-Explore-Azure-App-Service::#18-Which-hosting-components-determine-an-app
 
 Tags:
 

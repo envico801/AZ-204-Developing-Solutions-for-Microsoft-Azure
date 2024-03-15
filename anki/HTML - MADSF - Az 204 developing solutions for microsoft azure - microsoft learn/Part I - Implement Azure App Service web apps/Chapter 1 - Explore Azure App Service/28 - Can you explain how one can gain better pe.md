@@ -1,13 +1,13 @@
 ==================== Question ====================  
 
-### What does the pricing tier determine in an App Service plan?  
+### Can you explain how one can gain better performance for an app within the App Service plan?  
 
 ==================== Answer ====================  
 
-It determines the features available to the apps and the pricing for the plan.
+By isolating the app into a separate App Service plan.
 
 ==================== Id ====================  
-20
+28
 
 ---
 
@@ -15,7 +15,7 @@ DECK INFO
 
 TARGET DECK: EXAMPLE::EXAMPLE::MADSF - Az 204 developing solutions for microsoft azure - microsoft learn::Part I - Implement Azure App Service web apps::Chapter 1 - Explore Azure App Service
 
-FILE TAGS: #EXAMPLE::#EXAMPLE::#MADSF-Az-204-developing-solutions-for-microsoft-azure-microsoft-learn::#Part-I-Implement-Azure-App-Service-web-apps::#Chapter-1-Explore-Azure-App-Service::#20-What-does-the-pricing-tier-determine-in-an
+FILE TAGS: #EXAMPLE::#EXAMPLE::#MADSF-Az-204-developing-solutions-for-microsoft-azure-microsoft-learn::#Part-I-Implement-Azure-App-Service-web-apps::#Chapter-1-Explore-Azure-App-Service::#28-Can-you-explain-how-one-can-gain-better-pe
 
 Tags:
 

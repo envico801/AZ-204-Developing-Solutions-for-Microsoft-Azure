@@ -1,13 +1,13 @@
 ==================== Question ====================  
 
-### How many tiers are there in the pricing tier of an App Service plan?  
+### How can you enhance an app's capabilities or features within the App Service plan?  
 
 ==================== Answer ====================  
 
-There are three tiers: Shared compute, Dedicated compute, and Isolated tiers.
+By scaling up or down the pricing tier or isolating the app into a separate App Service plan.
 
 ==================== Id ====================  
-21
+26
 
 ---
 
@@ -15,7 +15,7 @@ DECK INFO
 
 TARGET DECK: EXAMPLE::EXAMPLE::MADSF - Az 204 developing solutions for microsoft azure - microsoft learn::Part I - Implement Azure App Service web apps::Chapter 1 - Explore Azure App Service
 
-FILE TAGS: #EXAMPLE::#EXAMPLE::#MADSF-Az-204-developing-solutions-for-microsoft-azure-microsoft-learn::#Part-I-Implement-Azure-App-Service-web-apps::#Chapter-1-Explore-Azure-App-Service::#21-How-many-tiers-are-there-in-the-pricing-ti
+FILE TAGS: #EXAMPLE::#EXAMPLE::#MADSF-Az-204-developing-solutions-for-microsoft-azure-microsoft-learn::#Part-I-Implement-Azure-App-Service-web-apps::#Chapter-1-Explore-Azure-App-Service::#26-How-can-you-enhance-an-app-s-capabilities
 
 Tags:
 

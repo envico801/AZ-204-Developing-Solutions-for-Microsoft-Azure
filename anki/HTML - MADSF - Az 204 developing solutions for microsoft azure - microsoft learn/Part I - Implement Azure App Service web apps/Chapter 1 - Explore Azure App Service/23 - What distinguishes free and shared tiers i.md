@@ -1,13 +1,13 @@
 ==================== Question ====================  
 
-### Can you explain how one can gain better performance for an app within the App Service plan?  
+### What distinguishes Free and Shared tiers in terms of application performance and scalability?  
 
 ==================== Answer ====================  
 
-By isolating the app into a separate App Service plan.
+Free and Shared tiers mean that applications share CPU minutes on a single virtual machine instance and lack scalability.
 
 ==================== Id ====================  
-29
+23
 
 ---
 
@@ -15,7 +15,7 @@ DECK INFO
 
 TARGET DECK: EXAMPLE::EXAMPLE::MADSF - Az 204 developing solutions for microsoft azure - microsoft learn::Part I - Implement Azure App Service web apps::Chapter 1 - Explore Azure App Service
 
-FILE TAGS: #EXAMPLE::#EXAMPLE::#MADSF-Az-204-developing-solutions-for-microsoft-azure-microsoft-learn::#Part-I-Implement-Azure-App-Service-web-apps::#Chapter-1-Explore-Azure-App-Service::#29-Can-you-explain-how-one-can-gain-better-pe
+FILE TAGS: #EXAMPLE::#EXAMPLE::#MADSF-Az-204-developing-solutions-for-microsoft-azure-microsoft-learn::#Part-I-Implement-Azure-App-Service-web-apps::#Chapter-1-Explore-Azure-App-Service::#23-What-distinguishes-free-and-shared-tiers-i
 
 Tags:
 

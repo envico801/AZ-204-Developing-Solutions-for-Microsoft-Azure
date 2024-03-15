@@ -22,21 +22,20 @@
 | [14](#id14) | [How does the azure portal handle features](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/14%20-%20How%20does%20the%20azure%20portal%20handle%20features.md) | 1 | 1 |
 | [15](#id15) | [In what scenarios is the custom container](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/15%20-%20In%20what%20scenarios%20is%20the%20custom%20container.md) | 1 | 1 |
 | [16](#id16) | [How does the disk latency compare for file](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/16%20-%20How%20does%20the%20disk%20latency%20compare%20for%20file.md) | 1 | 1 |
-| [17](#id17) | [What is the purpose of an app service plan](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/17%20-%20What%20is%20the%20purpose%20of%20an%20app%20service%20plan.md) | 1 | 1 |
-| [18](#id18) | [What components does an app service plan d](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/18%20-%20What%20components%20does%20an%20app%20service%20plan%20d.md) | 1 | 1 |
-| [19](#id19) | [What components does an app service plan d](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/19%20-%20What%20components%20does%20an%20app%20service%20plan%20d.md) | 1 | 1 |
-| [20](#id20) | [What does the pricing tier determine in an](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/20%20-%20What%20does%20the%20pricing%20tier%20determine%20in%20an.md) | 1 | 1 |
-| [21](#id21) | [How many tiers are there in the pricing ti](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/21%20-%20How%20many%20tiers%20are%20there%20in%20the%20pricing%20ti.md) | 1 | 1 |
-| [22](#id22) | [How does shared compute differ from dedica](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/22%20-%20How%20does%20shared%20compute%20differ%20from%20dedica.md) | 1 | 1 |
-| [23](#id23) | [What is the isolated pricing tier in app s](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/23%20-%20What%20is%20the%20isolated%20pricing%20tier%20in%20app%20s.md) | 1 | 1 |
-| [24](#id24) | [What distinguishes free and shared tiers i](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/24%20-%20What%20distinguishes%20free%20and%20shared%20tiers%20i.md) | 1 | 1 |
-| [25](#id25) | [What role does the app service plan play f](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/25%20-%20What%20role%20does%20the%20app%20service%20plan%20play%20f.md) | 1 | 1 |
-| [26](#id26) | [How do multiple vm instances or autoscalin](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/26%20-%20How%20do%20multiple%20vm%20instances%20or%20autoscalin.md) | 1 | 1 |
-| [27](#id27) | [How can you enhance an app s capabilities](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/27%20-%20How%20can%20you%20enhance%20an%20app%20s%20capabilities.md) | 1 | 1 |
-| [28](#id28) | [What benefits does isolating an app into a](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/28%20-%20What%20benefits%20does%20isolating%20an%20app%20into%20a.md) | 1 | 1 |
-| [29](#id29) | [Can you explain how one can gain better pe](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/29%20-%20Can%20you%20explain%20how%20one%20can%20gain%20better%20pe.md) | 1 | 1 |
-| [30](#id30) | [Under what circumstances should you consid](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/30%20-%20Under%20what%20circumstances%20should%20you%20consid.md) | 1 | 1 |
-| [31](#id31) | [What risks should be mitigated when sharin](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/31%20-%20What%20risks%20should%20be%20mitigated%20when%20sharin.md) | 1 | 1 |
+| [17](#id17) | [What does an app service plan contain](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/17%20-%20What%20does%20an%20app%20service%20plan%20contain.md) | 1 | 1 |
+| [18](#id18) | [Which hosting components determine an app](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/18%20-%20Which%20hosting%20components%20determine%20an%20app.md) | 1 | 1 |
+| [19](#id19) | [What does the pricing tier determine in an](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/19%20-%20What%20does%20the%20pricing%20tier%20determine%20in%20an.md) | 1 | 1 |
+| [20](#id20) | [How many tiers are there in the pricing ti](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/20%20-%20How%20many%20tiers%20are%20there%20in%20the%20pricing%20ti.md) | 1 | 1 |
+| [21](#id21) | [How does shared compute differ from dedica](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/21%20-%20How%20does%20shared%20compute%20differ%20from%20dedica.md) | 1 | 1 |
+| [22](#id22) | [What is the isolated pricing tier in app s](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/22%20-%20What%20is%20the%20isolated%20pricing%20tier%20in%20app%20s.md) | 1 | 1 |
+| [23](#id23) | [What distinguishes free and shared tiers i](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/23%20-%20What%20distinguishes%20free%20and%20shared%20tiers%20i.md) | 1 | 1 |
+| [24](#id24) | [What is the significance of the app servic](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/24%20-%20What%20is%20the%20significance%20of%20the%20app%20servic.md) | 1 | 1 |
+| [25](#id25) | [How do multiple vm instances or autoscalin](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/25%20-%20How%20do%20multiple%20vm%20instances%20or%20autoscalin.md) | 1 | 1 |
+| [26](#id26) | [How can you enhance an app s capabilities](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/26%20-%20How%20can%20you%20enhance%20an%20app%20s%20capabilities.md) | 1 | 1 |
+| [27](#id27) | [What benefits does isolating an app into a](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/27%20-%20What%20benefits%20does%20isolating%20an%20app%20into%20a.md) | 1 | 1 |
+| [28](#id28) | [Can you explain how one can gain better pe](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/28%20-%20Can%20you%20explain%20how%20one%20can%20gain%20better%20pe.md) | 1 | 1 |
+| [29](#id29) | [Under what circumstances should you consid](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/29%20-%20Under%20what%20circumstances%20should%20you%20consid.md) | 1 | 1 |
+| [30](#id30) | [What risks should be mitigated when sharin](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/30%20-%20What%20risks%20should%20be%20mitigated%20when%20sharin.md) | 1 | 1 |
 
 ### Part I - Implement Azure App Service web apps
 
@@ -192,7 +191,7 @@ There is higher disk latency for files allocated on **content volume** compared 
 
 Q:: =============================================  
 
-##### What is the purpose of an App Service plan in Azure App Service?
+##### What does an App Service plan contain?
 
 ###### ID17
 
@@ -201,7 +200,7 @@ An App Service plan provides the necessary compute resources for apps to run in 
 
 Q:: =============================================  
 
-##### What components does an App Service plan determine for apps in Azure App Service?
+##### Which hosting components determine an App Service plan?
 
 ###### ID18
 
@@ -210,18 +209,9 @@ An App Service plan determines the operating system, region, number and size of 
 
 Q:: =============================================  
 
-##### What components does an App Service plan define?
-
-###### ID19
-
-A:: =============================================  
-An App Service plan defines the operating system, region, number of VM instances, size of VM instances, and pricing tier for the apps running within it.
-
-Q:: =============================================  
-
 ##### What does the pricing tier determine in an App Service plan?
 
-###### ID20
+###### ID19
 
 A:: =============================================  
 It determines the features available to the apps and the pricing for the plan.
@@ -230,7 +220,7 @@ Q:: =============================================
 
 ##### How many tiers are there in the pricing tier of an App Service plan?
 
-###### ID21
+###### ID20
 
 A:: =============================================  
 There are three tiers: Shared compute, Dedicated compute, and Isolated tiers.
@@ -239,7 +229,7 @@ Q:: =============================================
 
 ##### How does Shared compute differ from Dedicated compute in terms of resource allocation?
 
-###### ID22
+###### ID21
 
 A:: =============================================  
 Shared compute shares resources and has limited scalability, whereas Dedicated compute provides dedicated Azure VMs for better scalability and performance isolation.
@@ -248,7 +238,7 @@ Q:: =============================================
 
 ##### What is the Isolated pricing tier in App Service plans characterized by?
 
-###### ID23
+###### ID22
 
 A:: =============================================  
 It runs apps on dedicated Azure VMs within dedicated Azure Virtual Networks, providing both compute and network isolation.
@@ -257,16 +247,16 @@ Q:: =============================================
 
 ##### What distinguishes Free and Shared tiers in terms of application performance and scalability?
 
-###### ID24
+###### ID23
 
 A:: =============================================  
-Free and Shared tiers mean that applications share CPU minutes on a single virtual machine instance and lack scalability. The other tiers have this capability.
+Free and Shared tiers mean that applications share CPU minutes on a single virtual machine instance and lack scalability.
 
 Q:: =============================================  
 
-##### What role does the App Service plan play for App Service apps?
+##### What is the significance of the App Service plan?
 
-###### ID25
+###### ID24
 
 A:: =============================================  
 The App Service plan defines the scale unit for App Service apps.
@@ -275,7 +265,7 @@ Q:: =============================================
 
 ##### How do multiple VM instances or autoscaling affect the App Service plan?
 
-###### ID26
+###### ID25
 
 A:: =============================================  
 If configured, all apps within the plan share those resources and scale together based on the plan's settings.
@@ -284,7 +274,7 @@ Q:: =============================================
 
 ##### How can you enhance an app's capabilities or features within the App Service plan?
 
-###### ID27
+###### ID26
 
 A:: =============================================  
 By scaling up or down the pricing tier or isolating the app into a separate App Service plan.
@@ -293,7 +283,7 @@ Q:: =============================================
 
 ##### What benefits does isolating an app into a separate App Service plan offer?
 
-###### ID28
+###### ID27
 
 A:: =============================================  
 It provides better performance and control over resources.
@@ -302,7 +292,7 @@ Q:: =============================================
 
 ##### Can you explain how one can gain better performance for an app within the App Service plan?
 
-###### ID29
+###### ID28
 
 A:: =============================================  
 By isolating the app into a separate App Service plan.
@@ -311,7 +301,7 @@ Q:: =============================================
 
 ##### Under what circumstances should you consider isolating your app into a new App Service plan?
 
-###### ID30
+###### ID29
 
 A:: =============================================  
 When the app's resource demands are high, when it requires independent scaling, or when it needs resources in a different geographical region.
@@ -320,7 +310,7 @@ Q:: =============================================
 
 ##### What risks should be mitigated when sharing resources among multiple apps in one App Service plan?
 
-###### ID31
+###### ID30
 
 A:: =============================================  
 Risks include potential compromises in performance or scalability due to resource sharing among multiple apps in one App Service plan.

@@ -1,14 +1,13 @@
 ========== Question ==========  
 
-### What is the purpose of an App Service plan in Azure App Service?  
+### What is the significance of the App Service plan?  
 
 ========== Answer ==========  
 
-An App Service plan provides the necessary compute resources for apps to run in
-Azure App Service.
+The App Service plan defines the scale unit for App Service apps.
 
 ========== Id ==========  
-17
+24
 
 ---
 
@@ -16,7 +15,7 @@ DECK INFO
 
 TARGET DECK: EXAMPLE::EXAMPLE::MADSF - Az 204 developing solutions for microsoft azure - microsoft learn::Part I - Implement Azure App Service web apps::Chapter 1 - Explore Azure App Service
 
-FILE TAGS: #EXAMPLE::#EXAMPLE::#MADSF-Az-204-developing-solutions-for-microsoft-azure-microsoft-learn::#Part-I-Implement-Azure-App-Service-web-apps::#Chapter-1-Explore-Azure-App-Service::#17-What-is-the-purpose-of-an-app-service-plan
+FILE TAGS: #EXAMPLE::#EXAMPLE::#MADSF-Az-204-developing-solutions-for-microsoft-azure-microsoft-learn::#Part-I-Implement-Azure-App-Service-web-apps::#Chapter-1-Explore-Azure-App-Service::#24-What-is-the-significance-of-the-app-servic
 
 Tags:
 

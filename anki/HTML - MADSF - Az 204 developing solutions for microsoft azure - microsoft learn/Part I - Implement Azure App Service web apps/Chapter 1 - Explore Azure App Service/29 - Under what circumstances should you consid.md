@@ -1,13 +1,13 @@
 ==================== Question ====================  
 
-### What is the purpose of an App Service plan in Azure App Service?  
+### Under what circumstances should you consider isolating your app into a new App Service plan?  
 
 ==================== Answer ====================  
 
-An App Service plan provides the necessary compute resources for apps to run in Azure App Service.
+When the app's resource demands are high, when it requires independent scaling, or when it needs resources in a different geographical region.
 
 ==================== Id ====================  
-17
+29
 
 ---
 
@@ -15,7 +15,7 @@ DECK INFO
 
 TARGET DECK: EXAMPLE::EXAMPLE::MADSF - Az 204 developing solutions for microsoft azure - microsoft learn::Part I - Implement Azure App Service web apps::Chapter 1 - Explore Azure App Service
 
-FILE TAGS: #EXAMPLE::#EXAMPLE::#MADSF-Az-204-developing-solutions-for-microsoft-azure-microsoft-learn::#Part-I-Implement-Azure-App-Service-web-apps::#Chapter-1-Explore-Azure-App-Service::#17-What-is-the-purpose-of-an-app-service-plan
+FILE TAGS: #EXAMPLE::#EXAMPLE::#MADSF-Az-204-developing-solutions-for-microsoft-azure-microsoft-learn::#Part-I-Implement-Azure-App-Service-web-apps::#Chapter-1-Explore-Azure-App-Service::#29-Under-what-circumstances-should-you-consid
 
 Tags:
 

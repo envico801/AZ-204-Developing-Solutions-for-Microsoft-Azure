@@ -1,13 +1,13 @@
 ==================== Question ====================  
 
-### What risks should be mitigated when sharing resources among multiple apps in one App Service plan?  
+### What does an App Service plan contain?  
 
 ==================== Answer ====================  
 
-Risks include potential compromises in performance or scalability due to resource sharing among multiple apps in one App Service plan.
+An App Service plan provides the necessary compute resources for apps to run in Azure App Service.
 
 ==================== Id ====================  
-31
+17
 
 ---
 
@@ -15,7 +15,7 @@ DECK INFO
 
 TARGET DECK: EXAMPLE::EXAMPLE::MADSF - Az 204 developing solutions for microsoft azure - microsoft learn::Part I - Implement Azure App Service web apps::Chapter 1 - Explore Azure App Service
 
-FILE TAGS: #EXAMPLE::#EXAMPLE::#MADSF-Az-204-developing-solutions-for-microsoft-azure-microsoft-learn::#Part-I-Implement-Azure-App-Service-web-apps::#Chapter-1-Explore-Azure-App-Service::#31-What-risks-should-be-mitigated-when-sharin
+FILE TAGS: #EXAMPLE::#EXAMPLE::#MADSF-Az-204-developing-solutions-for-microsoft-azure-microsoft-learn::#Part-I-Implement-Azure-App-Service-web-apps::#Chapter-1-Explore-Azure-App-Service::#17-What-does-an-app-service-plan-contain
 
 Tags:
 
