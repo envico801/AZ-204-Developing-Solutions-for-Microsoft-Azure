@@ -1,13 +1,14 @@
 ========== Question ==========  
 
-### Why consider using the built-in authentication for App Service and Azure Functions?  
+### What does the authentication flow options in App Service encompass?  
 
 ========== Answer ==========  
 
-It provides out-of-the-box authentication with federated identity providers.
+The authentication flow options in App Service include the server-directed flow
+and the client-directed flow.
 
 ========== Id ==========  
-46
+52
 
 ---
 
@@ -15,7 +16,7 @@ DECK INFO
 
 TARGET DECK: EXAMPLE::EXAMPLE::MADSF - Az 204 developing solutions for microsoft azure - microsoft learn::Part I - Implement Azure App Service web apps::Chapter 1 - Explore Azure App Service
 
-FILE TAGS: #EXAMPLE::#EXAMPLE::#MADSF-Az-204-developing-solutions-for-microsoft-azure-microsoft-learn::#Part-I-Implement-Azure-App-Service-web-apps::#Chapter-1-Explore-Azure-App-Service::#46-Why-consider-using-the-built-in-authentica
+FILE TAGS: #EXAMPLE::#EXAMPLE::#MADSF-Az-204-developing-solutions-for-microsoft-azure-microsoft-learn::#Part-I-Implement-Azure-App-Service-web-apps::#Chapter-1-Explore-Azure-App-Service::#52-What-does-the-authentication-flow-options
 
 Tags:
 

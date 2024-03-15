@@ -1,13 +1,13 @@
 ==================== Question ====================  
 
-### What options are there for handling unauthenticated traffic in App Service?  
+### How does the server-directed flow work in App Service authentication?  
 
 ==================== Answer ====================  
 
-You can allow unauthenticated requests or require authentication, which can include redirection to configured identity providers or returning HTTP status codes.
+The server-directed flow delegates federated sign-in to App Service, typically used with browser apps.
 
 ==================== Id ====================  
-56
+53
 
 ---
 
@@ -15,7 +15,7 @@ DECK INFO
 
 TARGET DECK: EXAMPLE::EXAMPLE::MADSF - Az 204 developing solutions for microsoft azure - microsoft learn::Part I - Implement Azure App Service web apps::Chapter 1 - Explore Azure App Service
 
-FILE TAGS: #EXAMPLE::#EXAMPLE::#MADSF-Az-204-developing-solutions-for-microsoft-azure-microsoft-learn::#Part-I-Implement-Azure-App-Service-web-apps::#Chapter-1-Explore-Azure-App-Service::#56-What-options-are-there-for-handling-unauth
+FILE TAGS: #EXAMPLE::#EXAMPLE::#MADSF-Az-204-developing-solutions-for-microsoft-azure-microsoft-learn::#Part-I-Implement-Azure-App-Service-web-apps::#Chapter-1-Explore-Azure-App-Service::#53-How-does-the-server-directed-flow-work-in
 
 Tags:
 

@@ -1,13 +1,14 @@
 ========== Question ==========  
 
-### Where does the authentication and authorization module in App Service run?  
+### How does the server-directed flow work in App Service authentication?  
 
 ========== Answer ==========  
 
-It runs in the same sandbox as your application code.
+The server-directed flow delegates federated sign-in to App Service, typically
+used with browser apps.
 
 ========== Id ==========  
-50
+53
 
 ---
 
@@ -15,7 +16,7 @@ DECK INFO
 
 TARGET DECK: EXAMPLE::EXAMPLE::MADSF - Az 204 developing solutions for microsoft azure - microsoft learn::Part I - Implement Azure App Service web apps::Chapter 1 - Explore Azure App Service
 
-FILE TAGS: #EXAMPLE::#EXAMPLE::#MADSF-Az-204-developing-solutions-for-microsoft-azure-microsoft-learn::#Part-I-Implement-Azure-App-Service-web-apps::#Chapter-1-Explore-Azure-App-Service::#50-Where-does-the-authentication-and-authoriz
+FILE TAGS: #EXAMPLE::#EXAMPLE::#MADSF-Az-204-developing-solutions-for-microsoft-azure-microsoft-learn::#Part-I-Implement-Azure-App-Service-web-apps::#Chapter-1-Explore-Azure-App-Service::#53-How-does-the-server-directed-flow-work-in
 
 Tags:
 

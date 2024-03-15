@@ -1,13 +1,13 @@
 ==================== Question ====================  
 
-### Is it mandatory to use App Service for authentication and authorization?  
+### Where does the authentication and authorization module in App Service run?  
 
 ==================== Answer ====================  
 
-No, it's not mandatory. Many web frameworks come with security features that can be used alternatively. You can also write your own utilities
+It runs in the same sandbox as your application code.
 
 ==================== Id ====================  
-47
+49
 
 ---
 
@@ -15,7 +15,7 @@ DECK INFO
 
 TARGET DECK: EXAMPLE::EXAMPLE::MADSF - Az 204 developing solutions for microsoft azure - microsoft learn::Part I - Implement Azure App Service web apps::Chapter 1 - Explore Azure App Service
 
-FILE TAGS: #EXAMPLE::#EXAMPLE::#MADSF-Az-204-developing-solutions-for-microsoft-azure-microsoft-learn::#Part-I-Implement-Azure-App-Service-web-apps::#Chapter-1-Explore-Azure-App-Service::#47-Is-it-mandatory-to-use-app-service-for-aut
+FILE TAGS: #EXAMPLE::#EXAMPLE::#MADSF-Az-204-developing-solutions-for-microsoft-azure-microsoft-learn::#Part-I-Implement-Azure-App-Service-web-apps::#Chapter-1-Explore-Azure-App-Service::#49-Where-does-the-authentication-and-authoriz
 
 Tags:
 

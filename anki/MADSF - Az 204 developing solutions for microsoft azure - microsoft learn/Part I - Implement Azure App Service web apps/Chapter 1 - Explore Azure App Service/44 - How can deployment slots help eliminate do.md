@@ -5,7 +5,8 @@
 ========== Answer ==========  
 
 By swapping staging and production slots, deployment slots can eliminate
-downtime.
+downtime. The swap operation warms up the necessary worker instances to match
+your production scale before transitioning
 
 ========== Id ==========  
 44

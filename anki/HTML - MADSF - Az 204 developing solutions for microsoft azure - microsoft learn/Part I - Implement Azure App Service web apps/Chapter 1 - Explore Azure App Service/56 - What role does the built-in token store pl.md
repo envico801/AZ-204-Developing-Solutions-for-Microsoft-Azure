@@ -1,13 +1,13 @@
 ==================== Question ====================  
 
-### How are authentication and authorization traces handled in App Service?  
+### What role does the built-in token store play in App Service?  
 
 ==================== Answer ====================  
 
-If you enable application logging, authentication and authorization traces are collected directly in your log files.
+The built-in token store in App Service serves as a repository of tokens linked to users of web apps, APIs, or native mobile apps.
 
 ==================== Id ====================  
-58
+56
 
 ---
 
@@ -15,7 +15,7 @@ DECK INFO
 
 TARGET DECK: EXAMPLE::EXAMPLE::MADSF - Az 204 developing solutions for microsoft azure - microsoft learn::Part I - Implement Azure App Service web apps::Chapter 1 - Explore Azure App Service
 
-FILE TAGS: #EXAMPLE::#EXAMPLE::#MADSF-Az-204-developing-solutions-for-microsoft-azure-microsoft-learn::#Part-I-Implement-Azure-App-Service-web-apps::#Chapter-1-Explore-Azure-App-Service::#58-How-are-authentication-and-authorization-t
+FILE TAGS: #EXAMPLE::#EXAMPLE::#MADSF-Az-204-developing-solutions-for-microsoft-azure-microsoft-learn::#Part-I-Implement-Azure-App-Service-web-apps::#Chapter-1-Explore-Azure-App-Service::#56-What-role-does-the-built-in-token-store-pl
 
 Tags:
 

@@ -1,13 +1,13 @@
 ==================== Question ====================  
 
-### Why consider using the built-in authentication for App Service and Azure Functions?  
+### What are the advantages of utilizing the built-in authentication feature?  
 
 ==================== Answer ====================  
 
-It provides out-of-the-box authentication with federated identity providers.
+It saves time and effort by providing pre-configured authentication mechanisms.
 
 ==================== Id ====================  
-46
+47
 
 ---
 
@@ -15,7 +15,7 @@ DECK INFO
 
 TARGET DECK: EXAMPLE::EXAMPLE::MADSF - Az 204 developing solutions for microsoft azure - microsoft learn::Part I - Implement Azure App Service web apps::Chapter 1 - Explore Azure App Service
 
-FILE TAGS: #EXAMPLE::#EXAMPLE::#MADSF-Az-204-developing-solutions-for-microsoft-azure-microsoft-learn::#Part-I-Implement-Azure-App-Service-web-apps::#Chapter-1-Explore-Azure-App-Service::#46-Why-consider-using-the-built-in-authentica
+FILE TAGS: #EXAMPLE::#EXAMPLE::#MADSF-Az-204-developing-solutions-for-microsoft-azure-microsoft-learn::#Part-I-Implement-Azure-App-Service-web-apps::#Chapter-1-Explore-Azure-App-Service::#47-What-are-the-advantages-of-utilizing-the-b
 
 Tags:
 

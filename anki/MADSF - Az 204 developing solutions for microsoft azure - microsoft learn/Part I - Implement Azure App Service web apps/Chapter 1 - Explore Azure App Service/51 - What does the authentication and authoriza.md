@@ -1,14 +1,13 @@
 ========== Question ==========  
 
-### How does the server-directed flow work in App Service authentication?  
+### What does the authentication and authorization module do with every incoming HTTP request?  
 
 ========== Answer ==========  
 
-The server-directed flow delegates federated sign-in to App Service, typically
-used with browser apps.
+It passes through it before being handled by your application code.
 
 ========== Id ==========  
-54
+51
 
 ---
 
@@ -16,7 +15,7 @@ DECK INFO
 
 TARGET DECK: EXAMPLE::EXAMPLE::MADSF - Az 204 developing solutions for microsoft azure - microsoft learn::Part I - Implement Azure App Service web apps::Chapter 1 - Explore Azure App Service
 
-FILE TAGS: #EXAMPLE::#EXAMPLE::#MADSF-Az-204-developing-solutions-for-microsoft-azure-microsoft-learn::#Part-I-Implement-Azure-App-Service-web-apps::#Chapter-1-Explore-Azure-App-Service::#54-How-does-the-server-directed-flow-work-in
+FILE TAGS: #EXAMPLE::#EXAMPLE::#MADSF-Az-204-developing-solutions-for-microsoft-azure-microsoft-learn::#Part-I-Implement-Azure-App-Service-web-apps::#Chapter-1-Explore-Azure-App-Service::#51-What-does-the-authentication-and-authoriza
 
 Tags:
 
