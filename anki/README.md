@@ -36,6 +36,21 @@
 | [28](#id28) | [Can you explain how one can gain better pe](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/28%20-%20Can%20you%20explain%20how%20one%20can%20gain%20better%20pe.md) | 1 | 1 |
 | [29](#id29) | [Under what circumstances should you consid](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/29%20-%20Under%20what%20circumstances%20should%20you%20consid.md) | 1 | 1 |
 | [30](#id30) | [What risks should be mitigated when sharin](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/30%20-%20What%20risks%20should%20be%20mitigated%20when%20sharin.md) | 1 | 1 |
+| [31](#id31) | [What is another term for automated deploym](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/31%20-%20What%20is%20another%20term%20for%20automated%20deploym.md) | 1 | 1 |
+| [32](#id32) | [How does automated deployment affect end u](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/32%20-%20How%20does%20automated%20deployment%20affect%20end%20u.md) | 1 | 1 |
+| [33](#id33) | [What is the purpose of automated deploymen](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/33%20-%20What%20is%20the%20purpose%20of%20automated%20deploymen.md) | 1 | 1 |
+| [34](#id34) | [What are the sources supported for automat](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/34%20-%20What%20are%20the%20sources%20supported%20for%20automat.md) | 1 | 1 |
+| [35](#id35) | [How does azure devops services facilitate](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/35%20-%20How%20does%20azure%20devops%20services%20facilitate.md) | 1 | 1 |
+| [36](#id36) | [How does automated deployment work with gi](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/36%20-%20How%20does%20automated%20deployment%20work%20with%20gi.md) | 1 | 1 |
+| [37](#id37) | [Can you describe the process of automated](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/37%20-%20Can%20you%20describe%20the%20process%20of%20automated.md) | 1 | 1 |
+| [38](#id38) | [What options are available for manual depl](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/38%20-%20What%20options%20are%20available%20for%20manual%20depl.md) | 1 | 1 |
+| [39](#id39) | [What is the purpose of the git url provide](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/39%20-%20What%20is%20the%20purpose%20of%20the%20git%20url%20provide.md) | 1 | 1 |
+| [40](#id40) | [How does the webapp up command facilitat](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/40%20-%20How%20does%20the%20webapp%20up%20command%20facilitat.md) | 1 | 1 |
+| [41](#id41) | [Explain the process of zip deploy for manu](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/41%20-%20Explain%20the%20process%20of%20zip%20deploy%20for%20manu.md) | 1 | 1 |
+| [42](#id42) | [What are ftp and ftps and how are they us](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/42%20-%20What%20are%20ftp%20and%20ftps%20and%20how%20are%20they%20us.md) | 1 | 1 |
+| [43](#id43) | [Why is it recommended to use deployment sl](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/43%20-%20Why%20is%20it%20recommended%20to%20use%20deployment%20sl.md) | 1 | 1 |
+| [44](#id44) | [How can deployment slots help eliminate do](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/44%20-%20How%20can%20deployment%20slots%20help%20eliminate%20do.md) | 1 | 1 |
+| [45](#id45) | [How does using deployment slots help elimi](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/45%20-%20How%20does%20using%20deployment%20slots%20help%20elimi.md) | 1 | 1 |
 
 ### Part I - Implement Azure App Service web apps
 
@@ -314,6 +329,141 @@ Q:: =============================================
 
 A:: =============================================  
 Risks include potential compromises in performance or scalability due to resource sharing among multiple apps in one App Service plan.
+
+Q:: =============================================  
+
+##### What is another term for automated deployment?
+
+###### ID31
+
+A:: =============================================  
+Continuous deployment.
+
+Q:: =============================================  
+
+##### How does automated deployment affect end users?
+
+###### ID32
+
+A:: =============================================  
+It minimizes the impact on end users during the deployment process.
+
+Q:: =============================================  
+
+##### What is the purpose of automated deployment?
+
+###### ID33
+
+A:: =============================================  
+It aims to push out new features and bug fixes quickly and repetitively.
+
+Q:: =============================================  
+
+##### What are the sources supported for automated deployment in Azure?
+
+###### ID34
+
+A:: =============================================  
+Azure supports automated deployment directly from Azure DevOps Services, GitHub, and Bitbucket.
+
+Q:: =============================================  
+
+##### How does Azure DevOps Services facilitate automated deployment?
+
+###### ID35
+
+A:: =============================================  
+Azure DevOps Services allows you to push your code to Azure, build your code in the cloud, run tests, generate a release from the code, and finally, push your code to an Azure Web App.
+
+Q:: =============================================  
+
+##### How does automated deployment work with GitHub and Azure?
+
+###### ID36
+
+A:: =============================================  
+With GitHub, any changes you push to your production branch on GitHub are automatically deployed to Azure when you connect your GitHub repository to Azure for automated deployment.
+
+Q:: =============================================  
+
+##### Can you describe the process of automated deployment with Bitbucket?
+
+###### ID37
+
+A:: =============================================  
+Similar to GitHub, Bitbucket allows you to configure automated deployment. Changes pushed to your Bitbucket repository can trigger automated deployment to Azure.
+
+Q:: =============================================  
+
+##### What options are available for manual deployment to Azure?
+
+###### ID38
+
+A:: =============================================  
+Manual deployment options to Azure include Git, CLI (`az webapp up`), Zip deploy, and FTP/S.
+
+Q:: =============================================  
+
+##### What is the purpose of the Git URL provided by App Service web apps?
+
+###### ID39
+
+A:: =============================================  
+The Git URL provided by App Service web apps allows you to add it as a remote repository, enabling you to push your code changes for deployment.
+
+Q:: =============================================  
+
+##### How does the `webapp up` command facilitate manual deployment?
+
+###### ID40
+
+A:: =============================================  
+The `webapp up` command, part of the `az` command-line interface, packages your application and deploys it to Azure. It can even create a new App Service web app if one does not exist.
+
+Q:: =============================================  
+
+##### Explain the process of Zip deploy for manual deployment.
+
+###### ID41
+
+A:: =============================================  
+Zip deploy involves using `curl` or a similar HTTP utility to send a ZIP file containing your application files to App Service, which then deploys the application.
+
+Q:: =============================================  
+
+##### What are FTP and FTPS, and how are they used for manual deployment?
+
+###### ID42
+
+A:: =============================================  
+FTP (File Transfer Protocol) and FTPS (FTP Secure) are traditional methods of pushing code to hosting environments like App Service. They allow you to transfer files to the server for deployment.
+
+Q:: =============================================  
+
+##### Why is it recommended to use deployment slots during production deployment?
+
+###### ID43
+
+A:: =============================================  
+Using deployment slots during production deployment allows you to deploy your app to a staging environment first.
+
+Q:: =============================================  
+
+##### How can deployment slots help eliminate downtime during deployment?
+
+###### ID44
+
+A:: =============================================  
+By swapping staging and production slots, deployment slots can eliminate downtime.
+
+Q:: =============================================  
+
+##### How does using deployment slots help eliminate downtime during deployment?
+
+###### ID45
+
+A:: =============================================  
+When using deployment slots, the swap operation warms up the necessary worker instances to match your production scale before transitioning, thus eliminating downtime during deployment.
 
 #### Chapter 2 - Configure web app settings
 
