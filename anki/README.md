@@ -51,6 +51,19 @@
 | [43](#id43) | [Why is it recommended to use deployment sl](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/43%20-%20Why%20is%20it%20recommended%20to%20use%20deployment%20sl.md) | 1 | 1 |
 | [44](#id44) | [How can deployment slots help eliminate do](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/44%20-%20How%20can%20deployment%20slots%20help%20eliminate%20do.md) | 1 | 1 |
 | [45](#id45) | [How does using deployment slots help elimi](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/45%20-%20How%20does%20using%20deployment%20slots%20help%20elimi.md) | 1 | 1 |
+| [46](#id46) | [Why consider using the built-in authentica](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/46%20-%20Why%20consider%20using%20the%20built-in%20authentica.md) | 1 | 1 |
+| [47](#id47) | [Is it mandatory to use app service for aut](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/47%20-%20Is%20it%20mandatory%20to%20use%20app%20service%20for%20aut.md) | 1 | 1 |
+| [48](#id48) | [What are the advantages of utilizing the b](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/48%20-%20What%20are%20the%20advantages%20of%20utilizing%20the%20b.md) | 1 | 1 |
+| [49](#id49) | [What identity providers are available by d](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/49%20-%20What%20identity%20providers%20are%20available%20by%20d.md) | 1 | 1 |
+| [50](#id50) | [Where does the authentication and authoriz](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/50%20-%20Where%20does%20the%20authentication%20and%20authoriz.md) | 1 | 1 |
+| [51](#id51) | [What processes does the authentication and](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/51%20-%20What%20processes%20does%20the%20authentication%20and.md) | 1 | 1 |
+| [52](#id52) | [What does the authentication and authoriza](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/52%20-%20What%20does%20the%20authentication%20and%20authoriza.md) | 1 | 1 |
+| [53](#id53) | [What does the authentication flow options](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/53%20-%20What%20does%20the%20authentication%20flow%20options.md) | 1 | 1 |
+| [54](#id54) | [How does the server-directed flow work in](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/54%20-%20How%20does%20the%20server-directed%20flow%20work%20in.md) | 1 | 1 |
+| [55](#id55) | [What is the client-directed flow in app se](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/55%20-%20What%20is%20the%20client-directed%20flow%20in%20app%20se.md) | 1 | 1 |
+| [56](#id56) | [What options are there for handling unauth](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/56%20-%20What%20options%20are%20there%20for%20handling%20unauth.md) | 1 | 1 |
+| [57](#id57) | [What role does the built-in token store pl](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/57%20-%20What%20role%20does%20the%20built-in%20token%20store%20pl.md) | 1 | 1 |
+| [58](#id58) | [How are authentication and authorization t](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/58%20-%20How%20are%20authentication%20and%20authorization%20t.md) | 1 | 1 |
 
 ### Part I - Implement Azure App Service web apps
 
@@ -464,6 +477,123 @@ Q:: =============================================
 
 A:: =============================================  
 When using deployment slots, the swap operation warms up the necessary worker instances to match your production scale before transitioning, thus eliminating downtime during deployment.
+
+Q:: =============================================  
+
+##### Why consider using the built-in authentication for App Service and Azure Functions?
+
+###### ID46
+
+A:: =============================================  
+It provides out-of-the-box authentication with federated identity providers.
+
+Q:: =============================================  
+
+##### Is it mandatory to use App Service for authentication and authorization?
+
+###### ID47
+
+A:: =============================================  
+No, it's not mandatory. Many web frameworks come with security features that can be used alternatively. You can also write your own utilities
+
+Q:: =============================================  
+
+##### What are the advantages of utilizing the built-in authentication feature?
+
+###### ID48
+
+A:: =============================================  
+It saves time and effort by providing pre-configured authentication mechanisms.
+
+Q:: =============================================  
+
+##### What identity providers are available by default in App Service?
+
+###### ID49
+
+A:: =============================================  
+App Service uses federated identity, and the default identity providers include Microsoft identity platform, Facebook, Google, Twitter, Any OpenID Connect provider, and GitHub.
+
+Q:: =============================================  
+
+##### Where does the authentication and authorization module in App Service run?
+
+###### ID50
+
+A:: =============================================  
+It runs in the same sandbox as your application code.
+
+Q:: =============================================  
+
+##### What processes does the authentication and authorization module handle for your app?
+
+###### ID51
+
+A:: =============================================  
+It authenticates users and clients, validates, stores, and refreshes OAuth tokens, manages the authenticated session, and injects identity information into HTTP request headers.
+
+Q:: =============================================  
+
+##### What does the authentication and authorization module do with every incoming HTTP request?
+
+###### ID52
+
+A:: =============================================  
+It passes through it before being handled by your application code.
+
+Q:: =============================================  
+
+##### What does the authentication flow options in App Service encompass?
+
+###### ID53
+
+A:: =============================================  
+The authentication flow options in App Service include the server-directed flow and the client-directed flow.
+
+Q:: =============================================  
+
+##### How does the server-directed flow work in App Service authentication?
+
+###### ID54
+
+A:: =============================================  
+The server-directed flow delegates federated sign-in to App Service, typically used with browser apps.
+
+Q:: =============================================  
+
+##### What is the client-directed flow in App Service authentication?
+
+###### ID55
+
+A:: =============================================  
+The client-directed flow involves the application code managing the sign-in process and is typically used with browser-less apps, REST APIs, Azure Functions, JavaScript browser clients, and native mobile apps.
+
+Q:: =============================================  
+
+##### What options are there for handling unauthenticated traffic in App Service?
+
+###### ID56
+
+A:: =============================================  
+You can allow unauthenticated requests or require authentication, which can include redirection to configured identity providers or returning HTTP status codes.
+
+Q:: =============================================  
+
+##### What role does the built-in token store play in App Service?
+
+###### ID57
+
+A:: =============================================  
+The built-in token store in App Service serves as a repository of tokens linked to users of web apps, APIs, or native mobile apps.
+
+Q:: =============================================  
+
+##### How are authentication and authorization traces handled in App Service?
+
+###### ID58
+
+A:: =============================================  
+If you enable application logging, authentication and authorization traces are collected directly in your log files.
 
 #### Chapter 2 - Configure web app settings
 
