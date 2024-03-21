@@ -63,6 +63,19 @@
 | [55](#id55) | [What options are there for handling unauth](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/55%20-%20What%20options%20are%20there%20for%20handling%20unauth.md) | 1 | 1 |
 | [56](#id56) | [What role does the built-in token store pl](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/56%20-%20What%20role%20does%20the%20built-in%20token%20store%20pl.md) | 1 | 1 |
 | [57](#id57) | [How are authentication and authorization t](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/57%20-%20How%20are%20authentication%20and%20authorization%20t.md) | 1 | 1 |
+| [58](#id58) | [What are the default accessibility charact](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/58%20-%20What%20are%20the%20default%20accessibility%20charact.md) | 1 | 1 |
+| [59](#id59) | [What are the two main deployment types for](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/59%20-%20What%20are%20the%20two%20main%20deployment%20types%20for.md) | 1 | 1 |
+| [60](#id60) | [Define the roles involved in azure app ser](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/60%20-%20Define%20the%20roles%20involved%20in%20azure%20app%20ser.md) | 1 | 1 |
+| [61](#id61) | [Why can t you directly connect the app ser](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/61%20-%20Why%20can%20t%20you%20directly%20connect%20the%20app%20ser.md) | 1 | 1 |
+| [62](#id62) | [Enumerate the inbound and outbound network](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/62%20-%20Enumerate%20the%20inbound%20and%20outbound%20network.md) | 1 | 1 |
+| [63](#id63) | [Can you use any feature to solve both inbo](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/63%20-%20Can%20you%20use%20any%20feature%20to%20solve%20both%20inbo.md) | 1 | 1 |
+| [64](#id64) | [Describe the use cases for the inbound fea](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/64%20-%20Describe%20the%20use%20cases%20for%20the%20inbound%20fea.md) | 1 | 1 |
+| [65](#id65) | [Explain the default networking behavior of](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/65%20-%20Explain%20the%20default%20networking%20behavior%20of.md) | 1 | 1 |
+| [66](#id66) | [How are worker vms segmented based on the](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/66%20-%20How%20are%20worker%20vms%20segmented%20based%20on%20the.md) | 1 | 1 |
+| [67](#id67) | [How can you determine the outbound ip addr](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/67%20-%20How%20can%20you%20determine%20the%20outbound%20ip%20addr.md) | 1 | 1 |
+| [68](#id68) | [What command can you use in azure cli to r](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/68%20-%20What%20command%20can%20you%20use%20in%20azure%20cli%20to%20r.md) | 1 | 1 |
+| [69](#id69) | [What is the significance of the possibleo](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/69%20-%20What%20is%20the%20significance%20of%20the%20possibleo.md) | 1 | 1 |
+| [70](#id70) | [How can you find all possible outbound ip](./MADSF%20-%20Az%20204%20developing%20solutions%20for%20microsoft%20azure%20-%20microsoft%20learn/Part%20I%20-%20Implement%20Azure%20App%20Service%20web%20apps/Chapter%201%20-%20Explore%20Azure%20App%20Service/70%20-%20How%20can%20you%20find%20all%20possible%20outbound%20ip.md) | 1 | 1 |
 
 ### Part I - Implement Azure App Service web apps
 
@@ -584,6 +597,123 @@ Q:: =============================================
 
 A:: =============================================  
 If you enable application logging, authentication and authorization traces are collected directly in your log files.
+
+Q:: =============================================  
+
+##### What are the default accessibility characteristics of apps hosted in Azure App Service?
+
+###### ID58
+
+A:: =============================================  
+By default, apps hosted in App Service are accessible directly through the internet and can reach only internet-hosted endpoints.
+
+Q:: =============================================  
+
+##### What are the two main deployment types for Azure App Service?
+
+###### ID59
+
+A:: =============================================  
+The two main deployment types for Azure App Service are multitenant public service and single-tenant App Service Environment (ASE).
+
+Q:: =============================================  
+
+##### Define the roles involved in Azure App Service deployment.
+
+###### ID60
+
+A:: =============================================  
+The roles in Azure App Service deployment include "front ends," which handle incoming HTTP or HTTPS requests, and "workers," which host the customer workload.
+
+Q:: =============================================  
+
+##### Why can't you directly connect the App Service network to your network?
+
+###### ID61
+
+A:: =============================================  
+You can't directly connect the App Service network to your network because there are many different customers in the same App Service scale unit, making direct connections unfeasible.
+
+Q:: =============================================  
+
+##### Enumerate the inbound and outbound networking features available in Azure App Service.
+
+###### ID62
+
+A:: =============================================  
+Inbound features include App-assigned address, Access restrictions, Service endpoints, and Private endpoints. Outbound features include Hybrid Connections, Gateway-required virtual network integration, and Virtual network integration.
+
+Q:: =============================================  
+
+##### Can you use any feature to solve both inbound and outbound communication issues in Azure App Service? Why or why not?
+
+###### ID63
+
+A:: =============================================  
+No, you can't use any feature to solve both inbound and outbound communication issues because the features that handle requests to your app can't be used to solve problems when making calls from your app, and vice versa.
+
+Q:: =============================================  
+
+##### Describe the use cases for the inbound features available in Azure App Service networking.
+
+###### ID64
+
+A:: =============================================  
+Inbound use cases include supporting IP-based SSL needs for your app, supporting unshared dedicated inbound address for your app, and restricting access to your app from a set of well-defined addresses.
+
+Q:: =============================================  
+
+##### Explain the default networking behavior of Azure App Service scale units.
+
+###### ID65
+
+A:: =============================================  
+Azure App Service scale units support many customers, where Free and Shared plans host workloads on multitenant workers, while Basic and higher plans host dedicated workloads per App Service plan.
+
+Q:: =============================================  
+
+##### How are worker VMs segmented based on the App Service plans?
+
+###### ID66
+
+A:: =============================================  
+Worker VMs are segmented based on the App Service plans, where different plans utilize different VM types, resulting in different sets of outbound addresses.
+
+Q:: =============================================  
+
+##### How can you determine the outbound IP addresses used by your app in Azure App Service?
+
+###### ID67
+
+A:: =============================================  
+Outbound IP addresses used by your app in Azure App Service can be found in the app's properties in the Azure portal.
+
+Q:: =============================================  
+
+##### What command can you use in Azure CLI to retrieve the outbound IP addresses of your app?
+
+###### ID68
+
+A:: =============================================  
+You can use the following Azure CLI command to retrieve outbound IP addresses: `az webapp show --resource-group <group_name> --name <app_name> --query outboundIpAddresses --output tsv`.
+
+Q:: =============================================  
+
+##### What is the significance of the `possibleOutboundIpAddresses` property in Azure App Service?
+
+###### ID69
+
+A:: =============================================  
+The `possibleOutboundIpAddresses` property in Azure App Service lists all possible outbound IP addresses for your app, regardless of pricing tiers, providing insights into potential outbound communication.
+
+Q:: =============================================  
+
+##### How can you find all possible outbound IP addresses for your app, regardless of pricing tiers, using Azure CLI?
+
+###### ID70
+
+A:: =============================================  
+You can find all possible outbound IP addresses for your app, regardless of pricing tiers, using the Azure CLI command: `az webapp show --resource-group <group_name> --name <app_name> --query possibleOutboundIpAddresses --output tsv`.
 
 #### Chapter 2 - Configure web app settings
 
